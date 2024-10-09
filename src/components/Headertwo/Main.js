@@ -2,21 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/resource/sidebar-logo.png";
 import logonew from "../../assets/images/logo.png";
-import imgone from "../../assets/images/resource/menu-image-1.jpg";
-import imgtwo from "../../assets/images/resource/menu-image-2.jpg";
-import Imgthree from "../../assets/images/resource/menu-image-3.jpg";
-import Imgfour from "../../assets/images/resource/menu-image-4.jpg";
 import Banner from "../Menhome/Banner";
 import Offer from "../Menhome/Offer";
 import Story from "../Menhome/Story";
 import Specialdish from "../Menhome/Specialdish";
 import MenuSection from "../Menhome/MenuSection";
 import Whyus from "../Menhome/Whyus";
-import ChefSection from "../Menhome/ChefSection";
-import NewsSection from "../Menhome/NewsSection";
 import Special from "../Menhome/Special";
 import Contact from "../Menhome/Contact";
-import Videosection from "../Menhome/Videosection";
 
 function Main() {
   const [active, setActive] = useState();
@@ -264,6 +257,7 @@ function Main() {
                 </div>
 
                 <div className="nav-boxtwo clearfix">
+                  {/* Navbar */}
                   <div className="nav-outertwo clearfix">
                     <nav className="main-menu">
                       <ul className="navigation clearfix">
@@ -271,7 +265,7 @@ function Main() {
                           <Link to="/hometwo">Home</Link>
                         </li>
                         <li>
-                          <Link to="/menufour">Menu</Link>
+                          <Link to="/menu">Menu</Link>
                         </li>
                         <li>
                           <Link to="/about">About Us</Link>
