@@ -13,7 +13,7 @@ import Specialdish from "../Menhome/Specialdish";
 import Menusection from "../Menhome/Menusection";
 import Whyus from "../Menhome/Whyus";
 import ChefSection from "../Menhome/ChefSection";
-import Reacntupdate from "../Menhome/NewsSection";
+import NewsSection from "../Menhome/NewsSection";
 import Special from "../Menhome/Special";
 import Contact from "../Menhome/Contact";
 import Videosection from "../Menhome/Videosection";
@@ -422,7 +422,7 @@ function Main() {
       <Whyus />
       <ChefSection />
       <Videosection />
-      <Reacntupdate />
+      <NewsSection />
     </>
   );
 }
