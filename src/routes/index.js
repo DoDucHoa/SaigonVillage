@@ -1,43 +1,42 @@
-import React, {  useState, useEffect} from 'react'
-import { Route, Routes , useLocation} from 'react-router-dom';
-import Header from '../components/Header/Main';
-import Footer from '../components/Footer/Main';
-import Home from '../components/Home/Main';
-import About from '../components/About/Main';
-import Chefs from '../components/Chef/Main';
-import Contact from '../components/Contact/Main';
-import Menu from '../components/Menu/Main';
-import Menuone from '../components/Menu/Menuone';
-import Menutwo from '../components/Menu/Menutwo'
-import Menuthree from '../components/Menu/Menuthree';
-import Menufour from '../components/Menu/Menufour';
-import Book from '../components/Book/Main'
-import Hometwo from '../components/Headertwo/Main'
-import Homethree from '../components/Homethree/Homethree'
+import React, { useState, useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Header from "../components/Header/Main";
+import Footer from "../components/Footer/Main";
+// import Home from "../components/Home/Main";
+import About from "../components/About/Main";
+import Chefs from "../components/Chef/Main";
+import Contact from "../components/Contact/Main";
+import Menu from "../components/Menu/Main";
+import Menuone from "../components/Menu/Menuone";
+import Menutwo from "../components/Menu/Menutwo";
+import Menuthree from "../components/Menu/Menuthree";
+import Menufour from "../components/Menu/Menufour";
+import Book from "../components/Book/Main";
+import Hometwo from "../components/Headertwo/Main";
+import Homethree from "../components/Homethree/Homethree";
 
 function Index() {
-
-  const [homepage, sethomepage] = useState(false)
-    const location = useLocation();
-    useEffect(() => {
-      if (location.pathname === "/hometwo"){
-        sethomepage(false)
-      }else{
-        sethomepage(true)
-      }
-    }, [location])
-
-  const path = location.pathname
+  const [homepage, sethomepage] = useState(false);
+  const location = useLocation();
   useEffect(() => {
-    window.scroll(0, 0)
-}, [path]);
+    if (location.pathname === "/hometwo") {
+      sethomepage(false);
+    } else {
+      sethomepage(true);
+    }
+  }, [location]);
+
+  const path = location.pathname;
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, [path]);
 
   return (
     <>
-      {homepage && <Header/>}
+      {homepage && <Header />}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hometwo" element={<Hometwo />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Hometwo />} />
         <Route path="/homethree" element={<Homethree />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/menuone" element={<Menuone />} />
@@ -51,7 +50,7 @@ function Index() {
       </Routes>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Index
+export default Index;
