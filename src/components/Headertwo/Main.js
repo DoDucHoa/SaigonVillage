@@ -10,7 +10,7 @@ import Banner from "../Menhome/Banner";
 import Offer from "../Menhome/Offer";
 import Story from "../Menhome/Story";
 import Specialdish from "../Menhome/Specialdish";
-import Menusection from "../Menhome/Menusection";
+import MenuSection from "../Menhome/MenuSection";
 import Whyus from "../Menhome/Whyus";
 import ChefSection from "../Menhome/ChefSection";
 import NewsSection from "../Menhome/NewsSection";
@@ -270,101 +270,11 @@ function Main() {
                         <li className="current">
                           <Link to="/hometwo">Home</Link>
                         </li>
-                        <li className="dropdown has-mega-menu">
-                          <Link to="/menu">Menus</Link>
-                          <ul>
-                            <li>
-                              <div className="mega-menu">
-                                <div className="menu-inner">
-                                  <div className="auto-container">
-                                    <div className="row clearfix">
-                                      <div className="menu-block col-lg-3 col-md-6 col-sm-6">
-                                        <div className="image">
-                                          <Link to="/menuone">
-                                            <img src={imgone} alt="" />
-                                          </Link>
-                                        </div>
-                                        <div className="title">
-                                          <Link to="/menuone">Menu list 1</Link>
-                                        </div>
-                                      </div>
-                                      <div className="menu-block col-lg-3 col-md-6 col-sm-6">
-                                        <div className="image">
-                                          <Link to="/menutwo">
-                                            <img src={imgtwo} alt="" />
-                                          </Link>
-                                        </div>
-                                        <div className="title">
-                                          <Link to="/menutwo">Menu list 2</Link>
-                                        </div>
-                                      </div>
-                                      <div className="menu-block col-lg-3 col-md-6 col-sm-6">
-                                        <div className="image">
-                                          <Link to="/menuthree">
-                                            <img src={Imgthree} alt="" />
-                                          </Link>
-                                        </div>
-                                        <div className="title">
-                                          <Link to="/menuthree">
-                                            Menu list 3
-                                          </Link>
-                                        </div>
-                                      </div>
-                                      <div className="menu-block col-lg-3 col-md-6 col-sm-6">
-                                        <div className="image">
-                                          <Link to="/menufour">
-                                            <img src={Imgfour} alt="" />
-                                          </Link>
-                                        </div>
-                                        <div className="title">
-                                          <Link to="/menufour">
-                                            Menu list 4
-                                          </Link>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
+                        <li>
+                          <Link to="/menufour">Menu</Link>
                         </li>
                         <li>
                           <Link to="/about">About Us</Link>
-                        </li>
-                        <li>
-                          <Link to="/ourchefs">Our chefs</Link>
-                        </li>
-                        <li className="dropdown">
-                          <Link to="#">Pages</Link>
-                          <ul>
-                            <li>
-                              <Link to="#">Dropdown Menu 1</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Dropdown Menu 2</Link>
-                            </li>
-                            <li>
-                              <Link to="#">Dropdown Menu 3</Link>
-                            </li>
-                            <li className="dropdown">
-                              <Link to="#">Dropdown Menu 4</Link>
-                              <ul>
-                                <li>
-                                  <Link to="#">Dropdown Menu level 2</Link>
-                                </li>
-                                <li>
-                                  <Link to="#">Dropdown Menu level 2</Link>
-                                </li>
-                                <li>
-                                  <Link to="#">Dropdown Menu Level 3</Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <Link to="#">Dropdown Lorem 5</Link>
-                            </li>
-                          </ul>
                         </li>
                         <li>
                           <Link to="/contact">Contact</Link>
@@ -416,13 +326,13 @@ function Main() {
       <Offer />
       <Story />
       <Specialdish />
-      <Menusection />
+      <MenuSection />
       <Special />
       <Contact />
       <Whyus />
-      <ChefSection />
+      {/* <ChefSection />
       <Videosection />
-      <NewsSection />
+      <NewsSection /> */}
     </>
   );
 }

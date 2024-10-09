@@ -3,7 +3,7 @@ import Banner from "../Menhome/Banner";
 import Offer from "../Menhome/Offer";
 import Story from "../Menhome/Story";
 import Specialdish from "../Menhome/Specialdish";
-import Menusection from "../Menhome/Menusection";
+import MenuSection from "../Menhome/MenuSection";
 import Whyus from "../Menhome/Whyus";
 import ChefSection from "../Menhome/ChefSection";
 import NewsSection from "../Menhome/NewsSection";
@@ -11,6 +11,8 @@ import Special from "../Menhome/Special";
 import Contact from "../Menhome/Contact";
 import Videosection from "../Menhome/Videosection";
 import Feature from "../Menhome/Feature";
+import { Link } from "react-router-dom";
+import sidebarlogo from "../../assets/images/resource/sidebar-logo.png";
 
 function Main() {
   return (
@@ -136,14 +138,14 @@ function Main() {
       <Offer />
       <Story />
       <Specialdish />
-      <Menusection />
+      <MenuSection />
       <Special />
       <Contact />
       <Whyus />
       <Feature />
-      <ChefSection />
-      <Videosection />
-      <NewsSection />
+      {/* <ChefSection /> */}
+      {/* <Videosection /> */}
+      {/* <NewsSection /> */}
     </>
   );
 }
