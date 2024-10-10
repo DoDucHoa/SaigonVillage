@@ -50,22 +50,8 @@ function Main() {
                   </li>
                 </ul>
               </li>
-              <li className="dropdown">
-                <Link to="/menu">Menus</Link>
-                <ul>
-                  <li>
-                    <Link to="/menuone">Menu List 1</Link>
-                  </li>
-                  <li>
-                    <Link to="/menutwo">Menu List 2</Link>
-                  </li>
-                  <li>
-                    <Link to="/menuthree">Menu List 3</Link>
-                  </li>
-                  <li>
-                    <Link to="/menufour">Menu List 4</Link>
-                  </li>
-                </ul>
+              <li>
+                <Link to="/menu">Menu</Link>
               </li>
               <li>
                 <Link to="/about">About Us</Link>

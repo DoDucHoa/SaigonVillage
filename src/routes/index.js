@@ -18,7 +18,6 @@ function Index() {
 
   return (
     <>
-      {/* {homepage && <Header />} */}
       <Routes>
         <Route path="/" element={<Hometwo />} />
         <Route path="/menu" element={<Menufour />} />
