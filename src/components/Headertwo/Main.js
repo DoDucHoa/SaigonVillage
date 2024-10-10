@@ -196,8 +196,8 @@ function Main() {
                 <div className="top-left clearfix">
                   <ul className="top-info clearfix">
                     <li>
-                      <i className="icon far fa-map-marker-alt"></i> Restaurant
-                      St, Delicious City, London 9578, UK
+                      <i className="icon far fa-map-marker-alt"></i> Auf dem
+                      Kreuz 19, 86152 Augsburg, DE
                     </li>
                     <li>
                       <i className="icon far fa-clock"></i> Daily : 11:30 –
