@@ -34,7 +34,7 @@ function Main() {
                     </div>
                     <div className="info">
                       <ul>
-                        <li>Restaurant St, Delicious City, London 9578, UK</li>
+                        <li>Auf dem Kreuz 19, 86152 Augsburg, DE</li>
                         <li>
                           <Link to="mailto:booking@domainname.com">
                             booking@domainname.com

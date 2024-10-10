@@ -165,7 +165,7 @@ function Main() {
           <h2>Visit Us</h2>
           <ul className="info">
             <li>
-              Restaurant St, Delicious City, <br /> London 9578, UK{" "}
+              Auf dem Kreuz 19, <br /> 86152 Augsburg, DE{" "}
             </li>
             <li>Open: 9.30 am - 2.30pm</li>
             <li>
@@ -200,22 +200,22 @@ function Main() {
                       St, Delicious City, London 9578, UK
                     </li>
                     <li>
-                      <i className="icon far fa-clock"></i> Daily : 8.00 am to
-                      10.00 pm
+                      <i className="icon far fa-clock"></i> Daily : 11:30 –
+                      14:30 und 17:00 – 22:00
                     </li>
                   </ul>
                 </div>
                 <div className="top-right clearfix">
                   <ul className="top-info clearfix">
                     <li>
-                      <Link to="tel:+11234567890">
-                        <i className="icon far fa-phone"></i> +1 123 456 7890
+                      <Link to="tel:+4982150476359">
+                        <i className="icon far fa-phone"></i> +49 821 504 763 59
                       </Link>
                     </li>
                     <li>
-                      <Link to="mailto:booking@restaurant.com">
+                      <Link to="mailto:info@saigonvillage.de">
                         <i className="icon far fa-envelope"></i>{" "}
-                        booking@restaurant.com
+                        info@saigonvillage.de
                       </Link>
                     </li>
                   </ul>

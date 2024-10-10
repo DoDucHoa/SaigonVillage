@@ -99,7 +99,7 @@ function Main() {
           <h2>Visit Us</h2>
           <ul className="info">
             <li>
-              Restaurant St, Delicious City, <br /> London 9578, UK
+              Auf dem Kreuz 19, <br /> 86152 Augsburg, DE
             </li>
             <li>Open: 9.30 am - 2.30pm</li>
             <li>
