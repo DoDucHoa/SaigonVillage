@@ -115,9 +115,10 @@ function Aboutsec() {
                     <span className="address">
                       Auf dem Kreuz 19, 86152 Augsburg, DE
                     </span>{" "}
-                    <Link to="tel:+88-123-123456">+88-123-123456</Link> <br />
-                    <Link to="mailto:reservation@restro.com">
-                      reservation@restro.com
+                    <Link to="tel:+4982150476359">+49 821 504 763 59</Link>{" "}
+                    <br />
+                    <Link to="mailto:info@saigonvillage.de">
+                      info@saigonvillage.de
                     </Link>
                   </li>
                 </ul>

@@ -140,8 +140,8 @@ function Book() {
                           <strong>Contact Us</strong>
                           <br />
                           Auf dem Kreuz 19,
-                          <br /> , 86152 Augsburg, DE <br /> Call :
-                          +88-123-123456 <br /> Email : booking@domainname.com{" "}
+                          <br /> , 86152 Augsburg, DE <br /> Call : +49 821 504
+                          763 59 <br /> Email : info@saigonvillage.de{" "}
                         </li>
                         <div className="separator">
                           <span></span>

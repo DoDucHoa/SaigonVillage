@@ -101,10 +101,10 @@ function Main() {
             <li>
               Auf dem Kreuz 19, <br /> 86152 Augsburg, DE
             </li>
-            <li>Open: 9.30 am - 2.30pm</li>
+            <li>Open: 11:30 – 14:30 und 17:00 – 22:00</li>
             <li>
-              <Link to="mailto:booking@domainame.com">
-                booking@domainame.com
+              <Link to="mailto:info@saigonvillage.de">
+                info@saigonvillage.de
               </Link>
             </li>
           </ul>
@@ -114,7 +114,7 @@ function Main() {
           <div className="booking-info">
             <div className="bk-title">Booking request</div>
             <div className="bk-no">
-              <Link to="tel:+88-123-123456">+88-123-123456</Link>
+              <Link to="tel:+4982150476359">+49 821 504 763 59</Link>
             </div>
           </div>
         </div>
