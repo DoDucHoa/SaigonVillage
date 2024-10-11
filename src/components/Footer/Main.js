@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import logonew from "../../assets/images/logo.png";
 
 function Main() {
+  const year = new Date().getFullYear();
+
   return (
     <>
       <footer className="main-footer">
@@ -153,13 +155,7 @@ function Main() {
         <div className="footer-bottom">
           <div className="auto-container">
             <div className="copyright">
-              &copy; 2022 Restaurt. All Rights Reserved | Crafted by{" "}
-              <Link
-                to="https://themeforest.net/user/kalanidhithemes"
-                target="blank"
-              >
-                Kalanidhi Themes
-              </Link>
+              &copy; {year} Saigon Village Restaurant. All Rights Reserved.
             </div>
           </div>
         </div>
