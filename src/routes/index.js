@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "../components/Footer/Main";
 import About from "../components/About/Main";
-// import Chefs from "../components/Chef/Main";
 import Contact from "../components/Contact/Main";
-import Menufour from "../components/Menu/Menufour";
+import Home from "../pages/Home";
+import Menu from "../pages/Menu";
+// import Chefs from "../components/Chef/Main";
 // import Book from "../components/Book/Main";
-import Hometwo from "../components/Headertwo/Main";
 
 function Index() {
   const location = useLocation();
@@ -19,8 +19,8 @@ function Index() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Hometwo />} />
-        <Route path="/menu" element={<Menufour />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/ourchefs" element={<Chefs />} /> */}
