@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logonew from "../../assets/images/logo.png";
-import { restaurantInfo } from "../../constant";
+import { PAGE_URL, restaurantInfo } from "../../constant";
 import RestaurantHeadingInfo from "./RestaurantHeadingInfo";
 import ReservationButton from "./ReservationButton";
 import { memo } from "react";
 
 function Header({ scrolled, isNavVisible }) {
+  const { pathname } = useLocation();
+
   return (
     <>
       {isNavVisible && (
@@ -29,18 +31,14 @@ function Header({ scrolled, isNavVisible }) {
                   <div className="nav-outertwo clearfix">
                     <nav className="main-menu">
                       <ul className="navigation clearfix">
-                        <li className="current">
-                          <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                          <Link to="/menu">Menu</Link>
-                        </li>
-                        <li>
-                          <Link to="/about">About Us</Link>
-                        </li>
-                        <li>
-                          <Link to="/contact">Contact</Link>
-                        </li>
+                        {PAGE_URL.map((page, index) => (
+                          <li
+                            className={pathname === page.url && "current"}
+                            key={index}
+                          >
+                            <Link to={page.url}>{page.name}</Link>
+                          </li>
+                        ))}
                       </ul>
                     </nav>
                   </div>

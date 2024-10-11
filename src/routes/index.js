@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "../components/Footer/Main";
-import About from "../components/About/Main";
-import Contact from "../components/Contact/Main";
 import Home from "../pages/Home";
 import Menu from "../pages/Menu";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
 // import Chefs from "../components/Chef/Main";
 // import Book from "../components/Book/Main";
 

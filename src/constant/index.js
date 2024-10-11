@@ -5,3 +5,22 @@ export const restaurantInfo = {
   email: "info@saigonvillage.de",
   name: "Saigon Village",
 };
+
+export const PAGE_URL = [
+  {
+    name: "Home",
+    url: "/",
+  },
+  {
+    name: "Menu",
+    url: "/menu",
+  },
+  {
+    name: "About Us",
+    url: "/about",
+  },
+  {
+    name: "Contact",
+    url: "/contact",
+  },
+];

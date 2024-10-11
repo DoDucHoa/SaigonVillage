@@ -19,9 +19,9 @@ function Home() {
       <Special />
       <Contact />
       <Whyus />
-      {/* <ChefSection />
-      <Videosection />
-      <NewsSection /> */}
+      {/* <ChefSection /> */}
+      {/* <Videosection /> */}
+      {/* <NewsSection /> */}
     </>
   );
 }
