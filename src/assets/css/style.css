@@ -53,6 +53,12 @@
   -o-transition: all 300ms ease;
 }
 
+@media (max-width: 768px) {
+  .main-header {
+    position: absolute;
+  }
+}
+
 .fixed-header.header-down {
   top: -51px;
 }
@@ -196,9 +202,21 @@
   z-index: 5;
 }
 
+@media (max-width: 768px) {
+  .main-header .main-box .logo-boxtwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 .main-header .nav-boxtwo {
   position: static;
   float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-header .nav-outertwo {
   position: static;
@@ -311,12 +329,6 @@
 }
 
 .main-header .nav-toggler {
-  position: relative;
-  float: left;
-  left: 0;
-  top: 0;
-  padding: 0;
-  display: none;
 }
 
 .main-header .nav-toggler button {
@@ -7195,7 +7207,7 @@ body.visible-sidebar {
   /* align-self: flex-end; */
   height: 2px;
   width: 83.33333333%;
-  background: #ffffff;
+  background: var(--main-color);
   transition: all 400ms ease-in-out;
 }
 

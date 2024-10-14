@@ -2,6 +2,7 @@ import React from "react";
 import Backgroundimage from "../../assets/images/background/image-4.jpg";
 import { Link } from "react-router-dom";
 import logonew from "../../assets/images/logo.png";
+import { restaurantInfo } from "../../constant";
 
 function Main() {
   const year = new Date().getFullYear();
@@ -36,18 +37,18 @@ function Main() {
                     </div>
                     <div className="info">
                       <ul>
-                        <li>Auf dem Kreuz 19, 86152 Augsburg, DE</li>
+                        <li>{restaurantInfo.address}</li>
                         <li>
                           <Link to="mailto:info@saigonvillage.de">
-                            info@saigonvillage.de
+                            {restaurantInfo.email}
                           </Link>
                         </li>
                         <li>
                           <Link to="tel:+4982150476359">
-                            Booking Request : +49 821 504 763 59
+                            Booking Request : {restaurantInfo.phone}
                           </Link>
                         </li>
-                        <li>Open : 11:30 – 14:30 und 17:00 – 22:00</li>
+                        <li>{restaurantInfo.openTime}</li>
                       </ul>
                     </div>
                     <div className="separator">

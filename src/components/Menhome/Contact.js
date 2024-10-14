@@ -6,6 +6,7 @@ import author1 from "../../assets/images/resource/author-thumb-1.jpg";
 import author2 from "../../assets/images/resource/author-thumb-2.jpg";
 import author3 from "../../assets/images/resource/author-thumb-3.jpg";
 import SwiperCore, { Controller } from "swiper";
+import { restaurantInfo } from "../../constant";
 
 SwiperCore.use([Controller]);
 function Contact() {
@@ -273,7 +274,9 @@ function Contact() {
                     <div className="booking-info">
                       <div className="bk-title">Booking request</div>
                       <div className="bk-no">
-                        <Link to="tel:+88-123-123456">+88-123-123456</Link>
+                        <Link to={"tel:" + restaurantInfo.phone}>
+                          {restaurantInfo.phone}
+                        </Link>
                       </div>
                     </div>
                     <div className="separator">
@@ -283,7 +286,7 @@ function Contact() {
                       <li>
                         <strong>Location</strong>
                         <br />
-                        Auf dem Kreuz 19, 86152 Augsburg, DE
+                        {restaurantInfo.address}
                       </li>
                       <li>
                         <strong>Lunch Time</strong>

@@ -4,6 +4,7 @@ import Iframe from "react-iframe";
 import bg25 from "../../assets/images/background/bg-25.png";
 import bg6 from "../../assets/images/background/bg-6.png";
 import restro from "../../assets/images/resource/restaurant.png";
+import { restaurantInfo } from "../../constant";
 
 function Contactbanner() {
   return (
@@ -41,7 +42,7 @@ function Contactbanner() {
                     <h4>Lunch Time</h4>
                     <div className="text">
                       {" "}
-                      Monday to Sunday <br /> 11.00 am - 2.30pm
+                      Monday to Sunday <br /> {restaurantInfo.lunchTime}
                     </div>
                   </div>
                 </div>
@@ -54,12 +55,12 @@ function Contactbanner() {
                   >
                     <h4>Contact Info</h4>
                     <div className="text">
-                      Auf dem Kreuz 19, 86152 Augsburg, DE
+                      {restaurantInfo.address}
                       <br />
-                      Email : info@saigonvillage.de
+                      Email : {restaurantInfo.email}
                     </div>
                     <div className="more-link">
-                      <Link to="#">Booking : +49 821 504 763 59</Link>
+                      <Link to="#">Booking : {restaurantInfo.phone}</Link>
                     </div>
                   </div>
                 </div>
@@ -74,7 +75,7 @@ function Contactbanner() {
                     <div className="text">
                       Monday to Sunday
                       <br />
-                      5.30 pm - 11.30 pm
+                      {restaurantInfo.dinnerTime}
                     </div>
                   </div>
                 </div>
