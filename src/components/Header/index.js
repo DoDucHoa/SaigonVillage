@@ -1,14 +1,47 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/horizon-logo.svg";
-import { PAGE_URL, restaurantInfo } from "../../constant";
+import { restaurantInfo } from "../../constant";
 import RestaurantHeadingInfo from "./RestaurantHeadingInfo";
 import ReservationButton from "./ReservationButton";
 import { memo } from "react";
 import useDeviceType from "../../hooks/useDeviceType";
+import { useTranslation } from "react-i18next";
 
 function Header({ scrolled, isNavVisible }) {
   const { pathname } = useLocation();
   const isMobile = useDeviceType() === "mobile";
+  const { t, i18n } = useTranslation();
+
+  const PAGE_URL = [
+    {
+      name: t("Navbar.Home"),
+      url: "/",
+    },
+    {
+      name: t("Navbar.Menu"),
+      url: "/menu",
+    },
+    {
+      name: t("Navbar.About"),
+      url: "/about",
+    },
+    {
+      name: t("Navbar.Contact"),
+      url: "/contact",
+    },
+  ];
+
+  const languages = [
+    { code: "en", label: "English" },
+    { code: "vi", label: "Tiếng Việt" },
+    { code: "de", label: "Deutsch" },
+  ];
+
+  // Function to handle language change
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
+  };
 
   return (
     <>
@@ -17,6 +50,19 @@ function Header({ scrolled, isNavVisible }) {
           className={`main-header ${scrolled && "fixed-header"} header-down`}
         >
           <RestaurantHeadingInfo />
+          {/* Language Switcher Dropdown */}
+          <div className="language-switcher">
+            <select
+              onChange={handleLanguageChange}
+              defaultValue={i18n.language}
+            >
+              {languages.map((lang) => (
+                <option key={lang.code} value={lang.code}>
+                  {lang.label}
+                </option>
+              ))}
+            </select>
+          </div>
 
           <div className="header-upper">
             <div className="auto-container">

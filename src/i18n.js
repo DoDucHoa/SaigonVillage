@@ -8,6 +8,7 @@ i18next
   .use(LanguageDetector)
   .use(Backend)
   .init({
+    supportedLngs: ["de", "en", "vi"],
     interpolation: { escapeValue: false },
     lng: "de",
     fallbackLng: "de",

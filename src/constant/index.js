@@ -7,22 +7,3 @@ export const restaurantInfo = {
   lunchTime: "11:30 - 14:30",
   dinnerTime: "17:00 - 22:00",
 };
-
-export const PAGE_URL = [
-  {
-    name: "Home",
-    url: "/",
-  },
-  {
-    name: "Menu",
-    url: "/menu",
-  },
-  {
-    name: "About Us",
-    url: "/about",
-  },
-  {
-    name: "Contact",
-    url: "/contact",
-  },
-];
