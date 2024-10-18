@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logonew from "../../assets/images/logo.png";
+import logo from "../../assets/images/horizon-logo.svg";
 import { PAGE_URL, restaurantInfo } from "../../constant";
 import RestaurantHeadingInfo from "./RestaurantHeadingInfo";
 import ReservationButton from "./ReservationButton";
@@ -20,11 +20,16 @@ function Header({ scrolled, isNavVisible }) {
 
           <div className="header-upper">
             <div className="auto-container">
-              <div className="main-box clearfix">
+              <div className="main-box">
                 <div className="logo-boxtwo">
                   <div className="logo">
                     <Link to="/" title={restaurantInfo.name}>
-                      <img src={logonew} alt="" title={restaurantInfo.name} />
+                      <img
+                        src={logo}
+                        alt=""
+                        title={restaurantInfo.name}
+                        style={{ width: 300, height: 130 }}
+                      />
                     </Link>
                   </div>
 

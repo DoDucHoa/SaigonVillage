@@ -1,9 +1,9 @@
 {
-  "short_name": "Delici",
-  "name": "Delici - Restaurants React Template",
+  "short_name": "Saigon Village",
+  "name": "Saigon Village",
   "icons": [
     {
-      "src": "assets/images/favicon.png",
+      "src": "assets/images/favicon36.png",
       "sizes": "36x36",
       "type": "image/x-icon"
     }

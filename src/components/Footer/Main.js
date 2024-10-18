@@ -1,7 +1,7 @@
 import React from "react";
 import Backgroundimage from "../../assets/images/background/image-4.jpg";
 import { Link } from "react-router-dom";
-import logonew from "../../assets/images/logo.png";
+import logo from "../../assets/images/vertical-logo.svg";
 import { restaurantInfo } from "../../constant";
 
 function Main() {
@@ -19,7 +19,7 @@ function Main() {
         <div className="upper-section">
           <div className="auto-container">
             <div className="row clearfix">
-              <div className="footer-col info-col col-lg-6 col-md-12 col-sm-12">
+              <div className="foote r-col info-col col-lg-6 col-md-12 col-sm-12">
                 <div
                   className="inner wow fadeInUp"
                   data-wow-delay="0ms"
@@ -27,11 +27,12 @@ function Main() {
                 >
                   <div className="content">
                     <div className="logo">
-                      <Link to="/" title="Delici - Restaurants HTML Template">
+                      <Link to="/" title="Saigon Village">
                         <img
-                          src={logonew}
+                          style={{ width: 256, height: 256 }}
+                          src={logo}
                           alt=""
-                          title="Delici - Restaurants HTML Template"
+                          title="Saigon Village Logo"
                         />
                       </Link>
                     </div>
