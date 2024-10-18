@@ -903,12 +903,15 @@
   .main-footer .info-col .newsletter-form input[type="password"] {
     padding-right: 30px;
     padding-left: 30px;
+    border-radius: 16px;
   }
 
   .main-footer .info-col .newsletter-form button {
     position: relative;
     width: 100%;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .main-footer .info-col .newsletter-form .alt-icon {

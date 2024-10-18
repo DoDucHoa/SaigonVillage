@@ -642,7 +642,6 @@ figure {
 .btn-style-one .btn-wrap {
   position: relative;
   z-index: 1;
-  float: left;
   overflow: hidden;
   display: inline-block;
 }
@@ -921,7 +920,7 @@ img {
   padding: 10px 20px;
   background-color: var(--color-six);
   border: 1px solid var(--white-color-opacity-five);
-  border-radius: 0px;
+  border-radius: 16px;
   -webkit-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;

@@ -110,10 +110,6 @@ function Main() {
                     </li>
                     <li>
                       {" "}
-                      <Link to="/ourchefs">Our chefs</Link>
-                    </li>
-                    <li>
-                      {" "}
                       <Link to="/contact">Contact</Link>
                     </li>
                   </ul>
@@ -134,14 +130,6 @@ function Main() {
                     <li>
                       {" "}
                       <Link to="https://www.instagram.com">instagram</Link>
-                    </li>
-                    <li>
-                      {" "}
-                      <Link to="https://twitter.com">Twitter</Link>
-                    </li>
-                    <li>
-                      {" "}
-                      <Link to="https://www.youtube.com">Youtube</Link>
                     </li>
                     <li>
                       {" "}

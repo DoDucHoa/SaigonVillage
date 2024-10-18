@@ -4272,7 +4272,7 @@ body.visible-sidebar {
   padding: 10px 20px 10px 40px;
   background-color: var(--color-six);
   border: 1px solid var(--white-color-opacity-five);
-  border-radius: 0px;
+  border-radius: 16px;
   -webkit-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
