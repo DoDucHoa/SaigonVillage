@@ -7,10 +7,29 @@ import Slidethree from "../../assets/images/main-slider/slider-3.jpg";
 import "swiper/swiper.min.css";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper.min.css";
+import { useTranslation } from "react-i18next";
 
 SwiperCore.use([Navigation]);
 
 function Banner() {
+  const { t } = useTranslation();
+
+  // Array of translation keys
+  const translationKeys = [
+    {
+      line1: "banner.flavorSection.index_0.line1",
+      line2: "banner.flavorSection.index_0.line2",
+    },
+    {
+      line1: "banner.flavorSection.index_1.line1",
+      line2: "banner.flavorSection.index_1.line2",
+    },
+    {
+      line1: "banner.flavorSection.index_2.line1",
+      line2: "banner.flavorSection.index_2.line2",
+    },
+  ];
+
   return (
     <Swiper
       className="banner-section banner-section-coustm"
@@ -37,7 +56,7 @@ function Banner() {
                       <div className="clearfix">
                         <div className="inner">
                           <div className="subtitle">
-                            <span>delightful experience</span>
+                            <span>{t("banner.delight")}</span>
                           </div>
                           <div className="pattern-image">
                             <img
@@ -50,22 +69,13 @@ function Banner() {
                           </div>
                           <h1>
                             <span>
-                              {index === 0
-                                ? "Flavors Inspired by"
-                                : index === 1
-                                ? "Where every flavor"
-                                : "For the love of"}
+                              {t(translationKeys[index].line1)}
                               <br />
-                              {index === 0
-                                ? "the Seasons"
-                                : index === 1
-                                ? "tells a story"
-                                : "delicious food"}
+                              {t(translationKeys[index].line2)}
                             </span>
                           </h1>
                           <div className="text">
-                            Come with family & feel the joy of mouthwatering
-                            food
+                            {t("banner.comeWithFamily")}
                           </div>
                           <div
                             className="links-box wow fadeInUp"
@@ -79,10 +89,10 @@ function Banner() {
                               >
                                 <span className="btn-wrap">
                                   <span className="text-one">
-                                    view our menu
+                                    {t("banner.viewMenu")}
                                   </span>
                                   <span className="text-two">
-                                    view our menu
+                                    {t("banner.viewMenu")}
                                   </span>
                                 </span>
                               </Link>

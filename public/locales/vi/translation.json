@@ -1,9 +1,30 @@
 {
-    "Navbar": {
-        "Home": "Trang Chủ",
-        "About": "Về Chúng Tôi",
-        "Contact": "Liên Hệ",
-        "Menu": "Thực Đơn",
-        "Booking": "Đặt Bàn"
+    "navbar": {
+      "home": "Trang Chủ",
+      "about": "Về Chúng Tôi",
+      "contact": "Liên Hệ",
+      "menu": "Thực Đơn",
+      "booking": "Đặt Bàn",
+      "language": "Ngôn Ngữ"
+    },
+    "banner": {
+      "delight": "trải nghiệm thú vị",
+      "flavorSection": {
+        "index_0": {
+          "line1": "Hương vị lấy cảm hứng từ",
+          "line2": "các Mùa"
+        },
+        "index_1": {
+          "line1": "Nơi mà mỗi hương vị",
+          "line2": "kể một câu chuyện"
+        },
+        "index_2": {
+          "line1": "Vì tình yêu dành cho",
+          "line2": "thức ăn ngon"
+        }
+      },
+      "comeWithFamily": "Hãy đến với gia đình và cảm nhận niềm vui của những món ăn ngon miệng",
+      "viewMenu": "xem thực đơn của chúng tôi"
     }
-}
+  }
+  

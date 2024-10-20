@@ -382,6 +382,9 @@
 .main-menu .navigation {
   position: static;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-menu .navigation > li {
@@ -7348,4 +7351,46 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
 .auto-container .swiper-button-next:hover:before,
 .auto-container .swiper-button-prev:hover:before {
   background: var(--main-color);
+}
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.language-switcher select {
+  background-color: transparent; /* Match the background with other menu items */
+  color: var(--white-color); /* Keep the text white like other menu items */
+  font-size: var(--font-16); /* Match the size with other menu text */
+  padding: 10px 30px 10px 15px; /* Padding for a cleaner look */
+  border: 1px solid transparent; /* Remove the border for smoothness */
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer;
+  appearance: none; /* Remove the default select dropdown arrow */
+  transition: background-color 0.3s, border 0.3s; /* Smooth transition for hover effects */
+}
+
+.language-switcher select:hover,
+.language-switcher select:focus {
+  background-color: rgba(255, 255, 255, 0.1); /* Light hover background */
+  border: 1px solid var(--main-color); /* Add the main color border on hover */
+  outline: none;
+}
+
+.language-switcher::after {
+  content: "\25BC"; /* Downward arrow */
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-color); /* Arrow color matches the highlight */
+  pointer-events: none;
+}
+
+.language-switcher select option {
+  background-color: var(
+    --color-two
+  ); /* Dropdown background matching the header */
+  color: var(--white-color); /* Text color for options */
+  padding: 10px;
 }

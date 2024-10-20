@@ -1,9 +1,29 @@
 {
-    "Navbar": {
-        "Home": "Home",
-        "About": "About Us",
-        "Contact": "Contact",
-        "Menu": "Menu",
-        "Booking": "Find a table"
-    }
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "menu": "Menu",
+    "booking": "Find a table",
+    "language": "Language"
+  },
+  "banner": {
+    "delight": "delightful experience",
+    "flavorSection": {
+      "index_0": {
+        "line1": "Flavors Inspired by",
+        "line2": "the Seasons"
+      },
+      "index_1": {
+        "line1": "Where every flavor",
+        "line2": "tells a story"
+      },
+      "index_2": {
+        "line1": "For the love of",
+        "line2": "delicious food"
+      }
+    },
+    "comeWithFamily": "Come with family & feel the joy of mouthwatering food",
+    "viewMenu": "view our menu"
+  }
 }

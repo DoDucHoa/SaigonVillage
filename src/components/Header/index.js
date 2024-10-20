@@ -14,19 +14,19 @@ function Header({ scrolled, isNavVisible }) {
 
   const PAGE_URL = [
     {
-      name: t("Navbar.Home"),
+      name: t("navbar.home"),
       url: "/",
     },
     {
-      name: t("Navbar.Menu"),
+      name: t("navbar.menu"),
       url: "/menu",
     },
     {
-      name: t("Navbar.About"),
+      name: t("navbar.about"),
       url: "/about",
     },
     {
-      name: t("Navbar.Contact"),
+      name: t("navbar.contact"),
       url: "/contact",
     },
   ];
@@ -50,19 +50,6 @@ function Header({ scrolled, isNavVisible }) {
           className={`main-header ${scrolled && "fixed-header"} header-down`}
         >
           <RestaurantHeadingInfo />
-          {/* Language Switcher Dropdown */}
-          <div className="language-switcher">
-            <select
-              onChange={handleLanguageChange}
-              defaultValue={i18n.language}
-            >
-              {languages.map((lang) => (
-                <option key={lang.code} value={lang.code}>
-                  {lang.label}
-                </option>
-              ))}
-            </select>
-          </div>
 
           <div className="header-upper">
             <div className="auto-container">
@@ -105,6 +92,24 @@ function Header({ scrolled, isNavVisible }) {
                               <Link to={page.url}>{page.name}</Link>
                             </li>
                           ))}
+                          <li>
+                            {/* Language Switcher Dropdown */}
+                            <div className="language-switcher">
+                              <select
+                                onChange={handleLanguageChange}
+                                defaultValue={""}
+                              >
+                                <option value="" disabled hidden>
+                                  {t("navbar.language")}
+                                </option>
+                                {languages.map((lang) => (
+                                  <option key={lang.code} value={lang.code}>
+                                    {lang.label}
+                                  </option>
+                                ))}
+                              </select>
+                            </div>
+                          </li>
                         </ul>
                       </nav>
                     </div>

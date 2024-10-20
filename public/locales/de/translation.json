@@ -1,9 +1,30 @@
 {
-    "Navbar": {
-        "Home": "Startseite",
-        "About": "Über uns",
-        "Contact": "Kontakt",
-        "Menu": "Menü",
-        "Booking": "Reservierung"
+    "navbar": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "menu": "Menü",
+      "booking": "Reservierung",
+      "language": "Sprache"
+    },
+    "banner": {
+      "delight": "köstliches Erlebnis",
+      "flavorSection": {
+        "index_0": {
+          "line1": "Aromen inspiriert von",
+          "line2": "den Jahreszeiten"
+        },
+        "index_1": {
+          "line1": "Wo jeder Geschmack",
+          "line2": "eine Geschichte erzählt"
+        },
+        "index_2": {
+          "line1": "Für die Liebe zu",
+          "line2": "köstlichem Essen"
+        }
+      },
+      "comeWithFamily": "Kommen Sie mit der Familie und erleben Sie die Freude an köstlichem Essen",
+      "viewMenu": "unser Menü ansehen"
     }
-}
+  }
+  
