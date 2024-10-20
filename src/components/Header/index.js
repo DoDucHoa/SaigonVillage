@@ -3,7 +3,7 @@ import logo from "../../assets/images/horizon-logo.svg";
 import { restaurantInfo } from "../../constant";
 import RestaurantHeadingInfo from "./RestaurantHeadingInfo";
 import ReservationButton from "./ReservationButton";
-import { memo } from "react";
+import { memo, useState } from "react";
 import useDeviceType from "../../hooks/useDeviceType";
 import { useTranslation } from "react-i18next";
 
@@ -11,6 +11,9 @@ function Header({ scrolled, isNavVisible }) {
   const { pathname } = useLocation();
   const isMobile = useDeviceType() === "mobile";
   const { t, i18n } = useTranslation();
+  const [active, setActive] = useState();
+
+  const currentClass = (page) => pathname === page.url && "current";
 
   const PAGE_URL = [
     {
@@ -45,6 +48,67 @@ function Header({ scrolled, isNavVisible }) {
 
   return (
     <>
+      {active && (
+        <div
+          className="menu-backdrop"
+          style={{ opacity: "1", visibility: "visible" }}
+        />
+      )}
+
+      <section className={`hidden-bar ${active && "visible-sidebar"}`}>
+        <div className="inner-box">
+          <div
+            className="cross-icon hidden-bar-closer"
+            onClick={() => setActive(false)}
+          >
+            <span className="far fa-close" onClick={() => setActive(false)}>
+              {" "}
+            </span>
+          </div>
+          <div className="logo-box">
+            <Link to="/" title="Saigon Village">
+              <img
+                src={logo}
+                alt="Saigon Village logo"
+                title="Saigon Village"
+              />
+            </Link>
+          </div>
+
+          <div className="side-menu">
+            <ul className="navigation clearfix">
+              {PAGE_URL.map((page, index) => (
+                <li className={currentClass(page)} key={index}>
+                  <Link to={page.url}>{page.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <h2>Visit Us</h2>
+          <ul className="info">
+            <li>{restaurantInfo.address}</li>
+            <li>{restaurantInfo.openTime}</li>
+            <li>
+              <Link to={"mailto:" + restaurantInfo.email}>
+                {restaurantInfo.email}
+              </Link>
+            </li>
+          </ul>
+          <div className="separator">
+            <span></span>
+          </div>
+          <div className="booking-info">
+            <div className="bk-title">Booking request</div>
+            <div className="bk-no">
+              <Link to={"tel:" + restaurantInfo.phone}>
+                {restaurantInfo.phone}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {isNavVisible && (
         <header
           className={`main-header ${scrolled && "fixed-header"} header-down`}
@@ -69,7 +133,10 @@ function Header({ scrolled, isNavVisible }) {
                   {isMobile && (
                     <div className="nav-toggler">
                       <button>
-                        <span className="hamburger">
+                        <span
+                          className="hamburger"
+                          onClick={() => setActive(true)}
+                        >
                           <span className="top-bun"></span>
                           <span className="meat"></span>
                           <span className="bottom-bun"></span>
@@ -85,10 +152,7 @@ function Header({ scrolled, isNavVisible }) {
                       <nav className="main-menu">
                         <ul className="navigation clearfix">
                           {PAGE_URL.map((page, index) => (
-                            <li
-                              className={pathname === page.url && "current"}
-                              key={index}
-                            >
+                            <li className={currentClass(page)} key={index}>
                               <Link to={page.url}>{page.name}</Link>
                             </li>
                           ))}
