@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/images/horizon-logo.svg";
+import hori_logo from "../../assets/images/horizon-logo.svg";
+import verti_logo from "../../assets/images/vertical-logo.svg";
 import { restaurantInfo } from "../../constant";
 import RestaurantHeadingInfo from "./RestaurantHeadingInfo";
 import ReservationButton from "./ReservationButton";
@@ -68,7 +69,7 @@ function Header({ scrolled, isNavVisible }) {
           <div className="logo-box">
             <Link to="/" title="Saigon Village">
               <img
-                src={logo}
+                src={verti_logo}
                 alt="Saigon Village logo"
                 title="Saigon Village"
               />
@@ -122,7 +123,7 @@ function Header({ scrolled, isNavVisible }) {
                   <div className="logo">
                     <Link to="/" title={restaurantInfo.name}>
                       <img
-                        src={logo}
+                        src={hori_logo}
                         alt=""
                         title={restaurantInfo.name}
                         style={{ width: 300, height: 130 }}
