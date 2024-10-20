@@ -13,6 +13,7 @@ function Header({ scrolled, isNavVisible }) {
   const isMobile = useDeviceType() === "mobile";
   const { t, i18n } = useTranslation();
   const [active, setActive] = useState();
+  const [show, setShow] = useState();
 
   const currentClass = (page) => pathname === page.url && "current";
 
@@ -83,6 +84,29 @@ function Header({ scrolled, isNavVisible }) {
                   <Link to={page.url}>{page.name}</Link>
                 </li>
               ))}
+              <li className="dropdown">
+                <Link
+                  to="#"
+                  onClick={() => setShow(show === true ? false : true)}
+                >
+                  {t("navbar.language")}
+                  <button type="button" className="btn-expander">
+                    <i className="far fa-angle-down"></i>
+                  </button>
+                </Link>
+
+                <ul style={{ display: show ? "block" : "none" }}>
+                  {languages.map((lang) => (
+                    <li
+                      key={lang.code}
+                      value={lang.code}
+                      onClick={() => i18n.changeLanguage(lang.code)}
+                    >
+                      <Link>{lang.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
             </ul>
           </div>
 
