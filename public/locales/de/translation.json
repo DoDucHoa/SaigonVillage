@@ -1,30 +1,66 @@
 {
-    "navbar": {
-      "home": "Startseite",
-      "about": "Über uns",
-      "contact": "Kontakt",
-      "menu": "Menü",
-      "booking": "Reservierung",
-      "language": "Sprache"
-    },
-    "banner": {
-      "delight": "köstliches Erlebnis",
-      "flavorSection": {
-        "index_0": {
-          "line1": "Aromen inspiriert von",
-          "line2": "den Jahreszeiten"
-        },
-        "index_1": {
-          "line1": "Wo jeder Geschmack",
-          "line2": "eine Geschichte erzählt"
-        },
-        "index_2": {
-          "line1": "Für die Liebe zu",
-          "line2": "köstlichem Essen"
-        }
+  "navbar": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "menu": "Menü",
+    "booking": "Reservierung",
+    "language": "Sprache"
+  },
+  "banner": {
+    "delight": "köstliches Erlebnis",
+    "flavorSection": {
+      "index_0": {
+        "line1": "Aromen inspiriert von",
+        "line2": "den Jahreszeiten"
       },
-      "comeWithFamily": "Kommen Sie mit der Familie und erleben Sie die Freude an köstlichem Essen",
-      "viewMenu": "unser Menü ansehen"
+      "index_1": {
+        "line1": "Wo jeder Geschmack",
+        "line2": "eine Geschichte erzählt"
+      },
+      "index_2": {
+        "line1": "Für die Liebe zu",
+        "line2": "köstlichem Essen"
+      }
+    },
+    "comeWithFamily": "Kommen Sie mit der Familie und erleben Sie die Freude an köstlichem Essen",
+    "viewMenu": "unser Menü ansehen"
+  },
+  "menu": {
+    "menu": "Menü",
+    "title": "LECKER & FANTASTISCH"
+  },
+  "menuCategories": {
+    "weekday_lunch": "MITTAGSANGEBOT",
+    "dinner": "ABENDESSEN",
+    "desserts": "DESSERTS",
+    "soft_drinks": "ALKOHOLFREIE GETRÄNKE",
+    "wines": "WEINE"
+  },
+  "food": {
+    "SaigonStarter": {
+      "title": "Saigon Starter",
+      "description": "für alle probierfreudigen Gourmets, hier die beliebtesten Vorspeisen auf einer Platte"
+    },
+    "DuckCurry": {
+      "title": "DUCK'N CURRY",
+      "description": "Kross gebackene Ente in einer roten Kokos-Curry-Soße, dazu frisches Gemüse, Basilikum mit Jasmin Duftreis"
+    },
+    "BeefRicenoodles": {
+      "title": "BEEF’N RICENOODLE",
+      "description": "Reisnudeln, zartes Rindfleisch, Knoblauch, mit einem Limetten-Ingwer-Dressing"
+    },
+    "SpringrollsRicenoodle": {
+      "title": "SPRINGROLLS'N RICENOODLE",
+      "description": "Reisnudeln, hausgemachte Frühlingsrollen, Knoblauch, Zwiebeln, verfeinert mit vietnam. Kräutern, abgeschmeckt mit einem Limetten-Ingwer-Dressing"
+    },
+    "TomaticSalmon": {
+      "title": "TOMATIC SALMON",
+      "description": "Frisch gegrilltes Lachsfilet auf einem im Wok geschwenkten Gemüsebett mit Tomaten, Lauchzwiebeln, verfeinert mit vietnam. Kräutern."
+    },
+    "CalamariOnTamarind": {
+      "title": "CALAMARI ON TAMARIND",
+      "description": "Knusprige Tintenfischringe in einer süß-sauren Tamarindensoße, dazu frischer Salat und Jasmin Duftreis"
     }
   }
-  
+}

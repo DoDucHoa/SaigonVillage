@@ -1,30 +1,66 @@
 {
-    "navbar": {
-      "home": "Trang Chủ",
-      "about": "Về Chúng Tôi",
-      "contact": "Liên Hệ",
-      "menu": "Thực Đơn",
-      "booking": "Đặt Bàn",
-      "language": "Ngôn Ngữ"
-    },
-    "banner": {
-      "delight": "trải nghiệm thú vị",
-      "flavorSection": {
-        "index_0": {
-          "line1": "Hương vị lấy cảm hứng từ",
-          "line2": "các Mùa"
-        },
-        "index_1": {
-          "line1": "Nơi mà mỗi hương vị",
-          "line2": "kể một câu chuyện"
-        },
-        "index_2": {
-          "line1": "Vì tình yêu dành cho",
-          "line2": "thức ăn ngon"
-        }
+  "navbar": {
+    "home": "Trang Chủ",
+    "about": "Về Chúng Tôi",
+    "contact": "Liên Hệ",
+    "menu": "Thực Đơn",
+    "booking": "Đặt Bàn",
+    "language": "Ngôn Ngữ"
+  },
+  "banner": {
+    "delight": "trải nghiệm thú vị",
+    "flavorSection": {
+      "index_0": {
+        "line1": "Hương vị lấy cảm hứng từ",
+        "line2": "các Mùa"
       },
-      "comeWithFamily": "Hãy đến với gia đình và cảm nhận niềm vui của những món ăn ngon miệng",
-      "viewMenu": "xem thực đơn của chúng tôi"
+      "index_1": {
+        "line1": "Nơi mà mỗi hương vị",
+        "line2": "kể một câu chuyện"
+      },
+      "index_2": {
+        "line1": "Vì tình yêu dành cho",
+        "line2": "thức ăn ngon"
+      }
+    },
+    "comeWithFamily": "Hãy đến với gia đình và cảm nhận niềm vui của những món ăn ngon miệng",
+    "viewMenu": "xem thực đơn của chúng tôi"
+  },
+  "menu": {
+    "menu": "Thực đơn",
+    "title": "Thơm Ngon & Tuyệt Vời"
+  },
+  "menuCategories": {
+    "weekday_lunch": "BỮA TRƯA TRONG TUẦN",
+    "dinner": "BỮA TỐI",
+    "desserts": "TRÁNG MIỆNG",
+    "soft_drinks": "NƯỚC NGỌT",
+    "wines": "RƯỢU VANG"
+  },
+  "food": {
+    "SaigonStarter": {
+      "title": "Khai Vị Sài Gòn",
+      "description": "Dành cho tất cả những người sành ăn thích khám phá, đây là những món khai vị phổ biến nhất trên một đĩa"
+    },
+    "DuckCurry": {
+      "title": "VỊT VÀ CÀ RI",
+      "description": "Vịt nướng giòn trong sốt cà ri dừa đỏ, kèm rau tươi, húng quế và cơm thơm hoa nhài"
+    },
+    "BeefRicenoodles": {
+      "title": "BÒ VÀ BÚN GẠO",
+      "description": "Bún gạo, thịt bò mềm, tỏi, với nước sốt chanh gừng"
+    },
+    "SpringrollsRicenoodle": {
+      "title": "CHẢ GIÒ VÀ BÚN GẠO",
+      "description": "Bún gạo, chả giò tự làm, tỏi, hành tây, kết hợp với các loại thảo mộc Việt Nam, và nêm với nước sốt chanh gừng"
+    },
+    "TomaticSalmon": {
+      "title": "CÁ HỒI VÀ CÀ CHUA",
+      "description": "Phi lê cá hồi nướng trên một đĩa rau xào với cà chua, hành lá, và các loại thảo mộc Việt Nam"
+    },
+    "CalamariOnTamarind": {
+      "title": "MỰC SỐT ME",
+      "description": "Mực chiên giòn trong sốt me chua ngọt, kèm với salad tươi và cơm thơm hoa nhài"
     }
   }
-  
+}

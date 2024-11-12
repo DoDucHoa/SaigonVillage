@@ -25,5 +25,42 @@
     },
     "comeWithFamily": "Come with family & feel the joy of mouthwatering food",
     "viewMenu": "view our menu"
+  },
+  "menu": {
+    "menu": "Menu",
+    "title": "DELICIOUS & AMAZING"
+  },
+  "menuCategories": {
+    "weekday_lunch": "WEEKDAY LUNCH",
+    "dinner": "DINNER",
+    "desserts": "DESSERTS",
+    "soft_drinks": "SOFT DRINKS",
+    "wines": "WINES"
+  },
+  "food": {
+    "SaigonStarter": {
+      "title": "Saigon Starter",
+      "description": "For all adventurous gourmets, here are the most popular appetizers on a platter"
+    },
+    "DuckCurry": {
+      "title": "DUCK'N CURRY",
+      "description": "Crispy baked duck in a red coconut curry sauce, with fresh vegetables, basil, and jasmine-scented rice"
+    },
+    "BeefRicenoodles": {
+      "title": "BEEF’N RICENOODLE",
+      "description": "Rice noodles, tender beef, garlic, with a lime-ginger dressing"
+    },
+    "SpringrollsRicenoodle": {
+      "title": "SPRINGROLLS'N RICENOODLE",
+      "description": "Rice noodles, homemade spring rolls, garlic, onions, refined with Vietnamese herbs, seasoned with a lime-ginger dressing"
+    },
+    "TomaticSalmon": {
+      "title": "TOMATIC SALMON",
+      "description": "Freshly grilled salmon fillet on a bed of wok-tossed vegetables with tomatoes, green onions, refined with Vietnamese herbs"
+    },
+    "CalamariOnTamarind": {
+      "title": "CALAMARI ON TAMARIND",
+      "description": "Crispy squid rings in a sweet-sour tamarind sauce, served with fresh salad and jasmine-scented rice"
+    }
   }
 }

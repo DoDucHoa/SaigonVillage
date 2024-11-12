@@ -1,14 +1,16 @@
 import React from "react";
-import Reservation from "../../components/Allmenus/FirstMenu/Reservation";
+import Reservation from "../../components/Reservation";
 import Bredcrumb from "../../components/Bredcrumb/Main";
 import Img from "../../assets/images/background/banner-image-2.jpg";
 import MenuSection from "../../components/Menhome/MenuSection";
 import { withHeader } from "../../hoc/withHeader";
+import { useTranslation } from "react-i18next";
 
 function Menu() {
+  const { t } = useTranslation();
   return (
     <>
-      <Bredcrumb subtitle="Our Menu 4" title="DELICIOUS & AMAZING" Img={Img} />
+      <Bredcrumb subtitle={t("menu.menu")} title={t("menu.title")} Img={Img} />
       <MenuSection />
       <Reservation />
     </>
