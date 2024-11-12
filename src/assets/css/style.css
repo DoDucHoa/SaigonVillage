@@ -2494,7 +2494,7 @@ body.visible-sidebar {
   font-size: var(--font-22);
   color: var(--main-color);
   padding-left: var(--padding-left-15);
-  background: var(--body-bg-color);
+  background: "transparent";
 }
 
 .menu-tabs .dish-block .desc {

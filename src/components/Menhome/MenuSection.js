@@ -1,7 +1,5 @@
-// /src/components/MenuSection.js
-
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import bgone from "../../assets/images/background/bg-5.png";
 import bgtwo from "../../assets/images/background/bg-6.png";
 import { TabsBox } from "../Menu/TabsBox";
@@ -16,7 +14,7 @@ const MenuSection = () => {
 
       <div className="auto-container">
         <TabsBox activeTab={activeTab} setActiveTab={setActiveTab} />
-        <ViewAllButton />
+        {/* <ViewAllButton /> */}
       </div>
     </section>
   );
@@ -33,17 +31,17 @@ const BackgroundImage = ({ leftImage, rightImage }) => (
   </>
 );
 
-const ViewAllButton = () => (
-  <div className="open-timing">
-    <div className="link-box">
-      <Link to="#" className="theme-btn btn-style-two clearfix">
-        <span className="btn-wrap">
-          <span className="text-one">view all menu</span>
-          <span className="text-two">view all menu</span>
-        </span>
-      </Link>
-    </div>
-  </div>
-);
+// const ViewAllButton = () => (
+//   <div className="open-timing">
+//     <div className="link-box">
+//       <Link to="#" className="theme-btn btn-style-two clearfix">
+//         <span className="btn-wrap">
+//           <span className="text-one">view all menu</span>
+//           <span className="text-two">view all menu</span>
+//         </span>
+//       </Link>
+//     </div>
+//   </div>
+// );
 
 export default MenuSection;

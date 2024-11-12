@@ -1,40 +1,40 @@
 import { Link, useLocation } from "react-router-dom";
+import { memo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import hori_logo from "../../assets/images/horizon-logo.svg";
 import verti_logo from "../../assets/images/vertical-logo.svg";
 import { restaurantInfo } from "../../constant";
 import RestaurantHeadingInfo from "./RestaurantHeadingInfo";
 import ReservationButton from "./ReservationButton";
-import { memo, useState } from "react";
 import useDeviceType from "../../hooks/useDeviceType";
-import { useTranslation } from "react-i18next";
+
+const PAGE_URL = [
+  {
+    name: "navbar.home",
+    url: "/",
+  },
+  {
+    name: "navbar.menu",
+    url: "/menu",
+  },
+  {
+    name: "navbar.about",
+    url: "/about",
+  },
+  {
+    name: "navbar.contact",
+    url: "/contact",
+  },
+];
 
 function Header({ scrolled, isNavVisible }) {
   const { pathname } = useLocation();
   const isMobile = useDeviceType() === "mobile";
   const { t, i18n } = useTranslation();
-  const [active, setActive] = useState();
-  const [show, setShow] = useState();
+  const [active, setActive] = useState(false);
+  const [show, setShow] = useState(false);
 
   const currentClass = (page) => pathname === page.url && "current";
-
-  const PAGE_URL = [
-    {
-      name: t("navbar.home"),
-      url: "/",
-    },
-    {
-      name: t("navbar.menu"),
-      url: "/menu",
-    },
-    {
-      name: t("navbar.about"),
-      url: "/about",
-    },
-    {
-      name: t("navbar.contact"),
-      url: "/contact",
-    },
-  ];
 
   const languages = [
     { code: "en", label: "English" },
@@ -42,7 +42,6 @@ function Header({ scrolled, isNavVisible }) {
     { code: "de", label: "Deutsch" },
   ];
 
-  // Function to handle language change
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
     i18n.changeLanguage(selectedLanguage);
@@ -54,6 +53,7 @@ function Header({ scrolled, isNavVisible }) {
         <div
           className="menu-backdrop"
           style={{ opacity: "1", visibility: "visible" }}
+          onClick={() => setActive(false)} // Close sidebar when clicking on backdrop
         />
       )}
 
@@ -63,9 +63,7 @@ function Header({ scrolled, isNavVisible }) {
             className="cross-icon hidden-bar-closer"
             onClick={() => setActive(false)}
           >
-            <span className="far fa-close" onClick={() => setActive(false)}>
-              {" "}
-            </span>
+            <span className="far fa-close"></span>
           </div>
           <div className="logo-box">
             <Link to="/" title="Saigon Village">
@@ -81,14 +79,11 @@ function Header({ scrolled, isNavVisible }) {
             <ul className="navigation clearfix">
               {PAGE_URL.map((page, index) => (
                 <li className={currentClass(page)} key={index}>
-                  <Link to={page.url}>{page.name}</Link>
+                  <Link to={page.url}>{t(page.name)}</Link>
                 </li>
               ))}
               <li className="dropdown">
-                <Link
-                  to="#"
-                  onClick={() => setShow(show === true ? false : true)}
-                >
+                <Link to="#" onClick={() => setShow(!show)}>
                   {t("navbar.language")}
                   <button type="button" className="btn-expander">
                     <i className="far fa-angle-down"></i>
@@ -99,7 +94,6 @@ function Header({ scrolled, isNavVisible }) {
                   {languages.map((lang) => (
                     <li
                       key={lang.code}
-                      value={lang.code}
                       onClick={() => i18n.changeLanguage(lang.code)}
                     >
                       <Link>{lang.label}</Link>
@@ -157,11 +151,8 @@ function Header({ scrolled, isNavVisible }) {
 
                   {isMobile && (
                     <div className="nav-toggler">
-                      <button>
-                        <span
-                          className="hamburger"
-                          onClick={() => setActive(true)}
-                        >
+                      <button onClick={() => setActive(true)}>
+                        <span className="hamburger">
                           <span className="top-bun"></span>
                           <span className="meat"></span>
                           <span className="bottom-bun"></span>
@@ -182,7 +173,6 @@ function Header({ scrolled, isNavVisible }) {
                             </li>
                           ))}
                           <li>
-                            {/* Language Switcher Dropdown */}
                             <div className="language-switcher">
                               <select
                                 onChange={handleLanguageChange}

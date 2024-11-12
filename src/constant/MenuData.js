@@ -61,51 +61,46 @@ export const dishData = {
   dinner: [
     [
       {
-        title: "Greek Salad",
-        price: 25.5,
-        description:
-          "Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.",
+        title: "food.DuckCurry.title",
+        price: 19.9,
+        description: "food.DuckCurry.description",
         image: CrispyDuck,
       },
       {
-        title: "Lasagne",
-        price: 40.0,
-        description:
-          "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.",
+        title: "food.BeefRicenoodles.title",
+        price: 19.9,
+        description: "food.BeefRicenoodles.description",
         image: BeefRicenoodle,
       },
       {
-        title: "Butternut Pumpkin",
-        price: 10.0,
-        description:
-          "Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.",
+        title: "food.SpringrollsRicenoodle.title",
+        price: 18.9,
+        description: "food.SpringrollsRicenoodle.description",
         image: SpringrollRicenoodle,
       },
     ],
     [
       {
-        title: "Tokusen Wagyu",
-        price: 39.0,
-        description:
-          "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.",
-        image: eight,
+        title: "food.TomaticSalmon.title",
+        price: 21.9,
+        description: "food.TomaticSalmon.description",
+        image: TomaticSalmon,
       },
       {
-        title: "Olivas Rellenas",
-        price: 25.0,
-        description:
-          "Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.",
-        image: nine,
+        title: "food.CalamariOnTamarind.title",
+        price: 19.9,
+        description: "food.CalamariOnTamarind.description",
+        image: CalamariOnTamarind,
       },
       {
-        title: "Opu Fish",
-        price: 49.0,
-        description:
-          "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.",
-        image: ten,
+        title: "food.SpringrollsRicenoodle.title",
+        price: 18.9,
+        description: "food.SpringrollsRicenoodle.description",
+        image: SpringrollRicenoodle,
       },
     ],
   ],
+  desserts: [],
   soft_drinks: [],
   wines: [],
 };
