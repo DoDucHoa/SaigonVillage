@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Slideone from "../../assets/images/main-slider/slider1.jpg";
-import Slidetwo from "../../assets/images/main-slider/slider-2.jpg";
-import Slidethree from "../../assets/images/main-slider/slider-3.jpg";
+import Slideone from "../../assets/images/background/HomePageFood1.jpg";
+import Slidetwo from "../../assets/images/background/HomePageFood2.jpg";
+import Slidethree from "../../assets/images/background/HomePageFood3.jpg";
 import "swiper/swiper.min.css";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper.min.css";

@@ -1,5 +1,5 @@
 import React from "react";
-import Backgroundimage from "../../assets/images/background/image-4.jpg";
+import Backgroundimage from "../../assets/images/background/FooterFoot1.jpg";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/vertical-logo.svg";
 import { restaurantInfo } from "../../constant";
@@ -52,7 +52,7 @@ function Main() {
                         <li>{restaurantInfo.openTime}</li>
                       </ul>
                     </div>
-                    <div className="separator">
+                    {/* <div className="separator">
                       <span></span>
                       <span></span>
                       <span></span>
@@ -84,7 +84,7 @@ function Main() {
                           </div>
                         </form>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

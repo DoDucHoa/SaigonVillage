@@ -17,10 +17,10 @@ const PAGE_URL = [
     name: "navbar.menu",
     url: "/menu",
   },
-  {
-    name: "navbar.about",
-    url: "/about",
-  },
+  // {
+  //   name: "navbar.about",
+  //   url: "/about",
+  // },
   {
     name: "navbar.contact",
     url: "/contact",
@@ -169,7 +169,7 @@ function Header({ scrolled, isNavVisible }) {
                         <ul className="navigation clearfix">
                           {PAGE_URL.map((page, index) => (
                             <li className={currentClass(page)} key={index}>
-                              <Link to={page.url}>{page.name}</Link>
+                              <Link to={page.url}>{t(page.name)}</Link>
                             </li>
                           ))}
                           <li>

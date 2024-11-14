@@ -1,6 +1,6 @@
 import Contactbanner from "../../components/Mencontactus/Contactbanner";
 import Bredcrumb from "../../components/Bredcrumb/Main";
-import Img from "../../assets/images/background/banner-image-4.jpg";
+import Img from "../../assets/images/background/Restaurant1.jpg";
 import { withHeader } from "../../hoc/withHeader";
 
 function Contact() {

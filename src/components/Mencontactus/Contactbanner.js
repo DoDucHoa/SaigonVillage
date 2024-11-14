@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
 import bg25 from "../../assets/images/background/bg-25.png";
 import bg6 from "../../assets/images/background/bg-6.png";
-import restro from "../../assets/images/resource/restaurant.png";
+import restro from "../../assets/images/background/ContactFoodBackground1.jpg";
 import { restaurantInfo } from "../../constant";
 
 function Contactbanner() {
