@@ -2,25 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import bg1 from "../../assets/images/background/bg-1.png";
 import bg2 from "../../assets/images/background/bg-2.png";
-import offerimg1 from "../../assets/images/offer/IMG_0003-HDR.jpg";
-import offerimg2 from "../../assets/images/resource/offer-image-2.jpg";
-import offerimg3 from "../../assets/images/resource/offer-image-3.jpg";
+import offerimg1 from "../../assets/images/offer/SaigonStarterMain.jpg";
+import offerimg2 from "../../assets/images/offer/CrispyDuckMain.jpg";
+import offerimg3 from "../../assets/images/offer/PhoMain.jpg";
+import { useTranslation } from "react-i18next";
 
 function Offer() {
+  const { t } = useTranslation();
+
   const offers = [
     {
       image: offerimg1,
-      title: "Breakfast",
-      link: "#",
-    },
-    {
-      image: offerimg2,
-      title: "Appetizers",
+      title: "Saigon Starter",
       link: "#",
     },
     {
       image: offerimg3,
-      title: "Drinks",
+      title: "Pho",
+      link: "#",
+    },
+    {
+      image: offerimg2,
+      title: "Crispy Duck",
       link: "#",
     },
   ];
@@ -37,7 +40,7 @@ function Offer() {
         <div className="auto-container">
           <div className="title-box centered">
             <div className="subtitle">
-              <span>Flavors for royalty</span>
+              <span>{t("offer.subtitle")}</span>
             </div>
             <div className="pattern-image">
               <img
@@ -45,12 +48,8 @@ function Offer() {
                 alt="mySvgImage"
               />
             </div>
-            <h2>We Offer Top Notch</h2>
-            <div className="text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry lorem Ipsum has been the industrys standard dummy text
-              ever.
-            </div>
+            <h2>{t("offer.title")}</h2>
+            <div className="text">{t("offer.description")}</div>
           </div>
           <div className="row justify-content-center clearfix">
             {offers.map((offer, index) => (
@@ -71,9 +70,9 @@ function Offer() {
                   <h3>
                     <Link to="#">{offer.title}</Link>
                   </h3>
-                  <div className="more-link">
+                  {/* <div className="more-link">
                     <Link to="#">view menu</Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

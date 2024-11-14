@@ -62,5 +62,22 @@
       "title": "CALAMARI ON TAMARIND",
       "description": "Knusprige Tintenfischringe in einer süß-sauren Tamarindensoße, dazu frischer Salat und Jasmin Duftreis"
     }
+  },
+  "offer": {
+    "title": "Der beste vietnamesische Geschmack",
+    "subtitle": "Echte vietnamesische Aromen",
+    "description": "Erleben Sie die Vielfalt Vietnams mit unseren ausgewählten Gerichten. Frische Kräuter, würzige Aromen und traditionelle Pho – jedes Gericht bringt das Wesen der vietnamesischen Küche auf Ihren Tisch."
+  },
+  "contact": {
+    "title": "Online-Reservierung",
+    "description1": "Rufen Sie an unter ",
+    "description2": "oder füllen Sie das Bestellformular aus",
+    "name": "Ihr Name",
+    "phone": "Telefonnummer",
+    "Person": "Personen",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "message": "Nachricht",
+    "submit": "Tisch reservieren"
   }
 }

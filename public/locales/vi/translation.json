@@ -62,5 +62,22 @@
       "title": "MỰC SỐT ME",
       "description": "Mực chiên giòn trong sốt me chua ngọt, kèm với salad tươi và cơm thơm hoa nhài"
     }
+  },
+  "offer": {
+    "title": "Chúng tôi mang đến hương vị Việt Nam tốt nhất",
+    "subtitle": "Hương vị Việt Nam gốc",
+    "description": "Khám phá hương vị phong phú và sống động của Việt Nam qua các món ăn được chọn lọc của chúng tôi. Từ những loại thảo mộc và gia vị tươi trong món Khai Vị Sài Gòn đến tô phở ấm áp, mỗi món ăn đều được chế biến để mang lại tinh hoa ẩm thực Việt Nam đến bàn ăn của bạn."
+  },
+  "contact": {
+    "title": "Đặt bàn trực tuyến",
+    "description1": "Gọi đến ",
+    "description2": "hoặc điền vào biểu mẫu đặt hàng",
+    "name": "Tên của bạn",
+    "phone": "Số điện thoại",
+    "Person": "Số người",
+    "date": "Ngày",
+    "time": "Thời gian",
+    "message": "Lời nhắn",
+    "submit": "Đặt bàn"
   }
 }

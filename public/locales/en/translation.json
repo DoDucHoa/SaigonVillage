@@ -62,5 +62,22 @@
       "title": "CALAMARI ON TAMARIND",
       "description": "Crispy squid rings in a sweet-sour tamarind sauce, served with fresh salad and jasmine-scented rice"
     }
+  },
+  "offer": {
+    "title": "We offer the best Vietnamese taste",
+    "subtitle": "Origin Vietnamese Flavors",
+    "description": "Discover the rich and vibrant tastes of Vietnam with our curated dishes. From the fresh herbs and spices in our Saigon Starter to the warm, comforting bowl of Pho, each dish is crafted to bring the true essence of Vietnamese cuisine to your table."
+  },
+  "contact": {
+    "title": "Online Reservation",
+    "description1": "Call to {phone}",
+    "description2": "or fill out the order form",
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "Person": "Person",
+    "date": "Date",
+    "time": "Time",
+    "message": "Message",
+    "submit": "Book a table"
   }
 }

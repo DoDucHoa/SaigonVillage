@@ -5,8 +5,11 @@ import bg25 from "../../assets/images/background/bg-25.png";
 import bg6 from "../../assets/images/background/bg-6.png";
 import restro from "../../assets/images/background/ContactFoodBackground1.jpg";
 import { restaurantInfo } from "../../constant";
+import useDeviceType from "../../hooks/useDeviceType";
 
 function Contactbanner() {
+  const isMobile = useDeviceType() === "mobile";
+
   return (
     <>
       <div className="contact-map">
@@ -155,9 +158,11 @@ function Contactbanner() {
                 </div>
               </div>
 
-              <div className="loc-block col-lg-6 col-md-12 col-sm-12">
-                <img src={restro} alt="" />
-              </div>
+              {!isMobile && (
+                <div className="loc-block col-lg-6 col-md-12 col-sm-12">
+                  <img src={restro} alt="" />
+                </div>
+              )}
             </div>
           </div>
         </div>
