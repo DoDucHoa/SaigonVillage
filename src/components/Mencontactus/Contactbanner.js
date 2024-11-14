@@ -44,11 +44,8 @@ function Contactbanner() {
                     data-wow-duration="1500ms"
                     data-wow-delay="300ms"
                   >
-                    <h4>{t("contact.lunchTime")}</h4>
-                    <div className="text">
-                      {" "}
-                      Monday to Sunday <br /> {restaurantInfo.lunchTime}
-                    </div>
+                    <h4>{t("contact.address")}</h4>
+                    <div className="text">{restaurantInfo.address}</div>
                   </div>
                 </div>
 
@@ -56,16 +53,40 @@ function Contactbanner() {
                   <div
                     className="inner-box cp-seprator wow fadeInUp"
                     data-wow-duration="1500ms"
-                    data-wow-delay="300ms"
+                    data-wow-delay="600ms"
                   >
-                    <h4>{t("contact.contactInfo")}</h4>
+                    <h4>{t("openTime")}</h4>
                     <div className="text">
-                      {restaurantInfo.address}
-                      <br />
-                      Email : {restaurantInfo.email}
-                    </div>
-                    <div className="more-link">
-                      <Link to="#">Booking : {restaurantInfo.phone}</Link>
+                      <ul>
+                        <li>
+                          {t("shortDays.monday") +
+                            ": 11:30 - 14:30 / 17:30 - 21:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.monday") +
+                            ": 11:30 - 14:30 / 17:30 - 21:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.tuesday") +
+                            "-" +
+                            t("shortDays.thursday") +
+                            ": 11:30 - 14:30 / 17:30 - 22:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.friday") +
+                            ": 11:30 - 14:30 / 17:30 - 23:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.saturday") +
+                            ": 12:00 - 15:00 / 17:30 - 23:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.sunday") +
+                            " & " +
+                            t("shortDays.holiday") +
+                            ": 12:00 - 15:00 / 17:30 - 22:00"}
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -74,13 +95,12 @@ function Contactbanner() {
                   <div
                     className="inner-box wow fadeInUp"
                     data-wow-duration="1500ms"
-                    data-wow-delay="600ms"
+                    data-wow-delay="300ms"
                   >
-                    <h4>{t("contact.dinnerTime")}</h4>
-                    <div className="text">
-                      Monday to Sunday
-                      <br />
-                      {restaurantInfo.dinnerTime}
+                    <h4>{t("contact.contactInfo")}</h4>
+                    <div className="text">Email : {restaurantInfo.email}</div>
+                    <div className="more-link">
+                      <Link to="#">Booking : {restaurantInfo.phone}</Link>
                     </div>
                   </div>
                 </div>

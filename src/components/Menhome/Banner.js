@@ -8,11 +8,14 @@ import Slidethree from "../../assets/images/background/HomePageFood3.jpg";
 import "swiper/swiper.min.css";
 import SwiperCore, { Navigation } from "swiper";
 import { useTranslation } from "react-i18next";
+import ReservationButton from "../Header/ReservationButton";
+import useDeviceType from "../../hooks/useDeviceType";
 
 SwiperCore.use([Navigation]);
 
 function Banner() {
   const { t } = useTranslation();
+  const isMobile = useDeviceType() === "mobile";
 
   const translationKeys = [
     {
@@ -100,6 +103,24 @@ function Banner() {
                                 </span>
                               </Link>
                             </div>
+                            {isMobile && (
+                              <div className="link" style={{ marginTop: 50 }}>
+                                <Link
+                                  target="_blank"
+                                  to="https://www.quandoo.de/en/place/saigon-village-98291"
+                                  className="theme-btn btn-style-two clearfix"
+                                >
+                                  <span className="btn-wrap">
+                                    <span className="text-one">
+                                      {t("navbar.booking")}
+                                    </span>
+                                    <span className="text-two">
+                                      {t("navbar.booking")}
+                                    </span>
+                                  </span>
+                                </Link>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </div>
