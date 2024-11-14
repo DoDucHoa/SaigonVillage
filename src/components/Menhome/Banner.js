@@ -1,3 +1,4 @@
+// Banner.js
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,7 +7,6 @@ import Slidetwo from "../../assets/images/background/HomePageFood2.jpg";
 import Slidethree from "../../assets/images/background/HomePageFood3.jpg";
 import "swiper/swiper.min.css";
 import SwiperCore, { Navigation } from "swiper";
-import "swiper/swiper.min.css";
 import { useTranslation } from "react-i18next";
 
 SwiperCore.use([Navigation]);
@@ -14,7 +14,6 @@ SwiperCore.use([Navigation]);
 function Banner() {
   const { t } = useTranslation();
 
-  // Array of translation keys
   const translationKeys = [
     {
       line1: "banner.flavorSection.index_0.line1",
@@ -39,7 +38,7 @@ function Banner() {
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      }} // Use "navigation" with lowercase, and place it outside the SwiperSlide elements
+      }}
     >
       <div className="banner-container">
         <div className="banner-slider">
@@ -47,8 +46,12 @@ function Banner() {
             {[Slideone, Slidetwo, Slidethree].map((image, index) => (
               <SwiperSlide
                 key={index}
-                className="swiper-slide slide-item img-fluid"
-                style={{ backgroundImage: `url(${image})` }}
+                className="swiper-slide slide-item"
+                style={{
+                  backgroundImage: `url(${image})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
               >
                 <div className="auto-container">
                   <div className="content-box">
@@ -64,7 +67,7 @@ function Banner() {
                                 require("../../assets/images/icons/separator.svg")
                                   .default
                               }
-                              alt="mySvgImage"
+                              alt="Separator"
                             />
                           </div>
                           <h1>

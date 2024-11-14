@@ -1383,6 +1383,15 @@ body.visible-sidebar {
   width: 100%;
   padding: 0px;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .banner-section .slide-item {
+    background-position: center top;
+    background-size: contain;
+  }
 }
 
 .banner-section .slide-item:before {
