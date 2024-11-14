@@ -5,7 +5,9 @@
     "contact": "Contact",
     "menu": "Menu",
     "booking": "Find a table",
-    "language": "Language"
+    "language": "Language",
+    "visit": "Visit Us",
+    "bookingRequest": "Booking Request"
   },
   "banner": {
     "delight": "delightful experience",
@@ -70,7 +72,7 @@
   },
   "contact": {
     "title": "Online Reservation",
-    "description1": "Call to {phone}",
+    "description1": "Call to",
     "description2": "or fill out the order form",
     "name": "Your Name",
     "phone": "Phone Number",
@@ -78,6 +80,43 @@
     "date": "Date",
     "time": "Time",
     "message": "Message",
-    "submit": "Book a table"
-  }
+    "submit": "Book a table",
+    "question": "Any question?",
+    "contact": "Contact Us",
+    "lunchTime": "Lunch Time",
+    "contactInfo": "Contact Information",
+    "dinnerTime": "Dinner Time"
+  },
+  "copyright": "Saigon Village Restaurant. All Rights Reserved.",
+  "message": {
+    "title": "Message us",
+    "description": "Have a question about the our service? We're here to help, contact us today",
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "email": "Your Email",
+    "message": "Message",
+    "submit": "Send your message"
+  },
+  "openTime": "Open Time",
+  "days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "holiday": "Holiday"
+  },
+  "shortDays": {
+    "monday": "Mon",
+    "tuesday": "Tue",
+    "wednesday": "Wed",
+    "thursday": "Thu",
+    "friday": "Fri",
+    "saturday": "Sat",
+    "sunday": "Sun",
+    "holiday": "Holiday"
+  },
+  "and": "and"
 }

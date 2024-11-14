@@ -5,7 +5,9 @@
     "contact": "Kontakt",
     "menu": "Menü",
     "booking": "Reservierung",
-    "language": "Sprache"
+    "language": "Sprache",
+    "visit": "Besuchen Sie uns",
+    "bookingRequest": "Reservierungsanfrage"
   },
   "banner": {
     "delight": "köstliches Erlebnis",
@@ -70,7 +72,7 @@
   },
   "contact": {
     "title": "Online-Reservierung",
-    "description1": "Rufen Sie an unter ",
+    "description1": "Rufen Sie an unter",
     "description2": "oder füllen Sie das Bestellformular aus",
     "name": "Ihr Name",
     "phone": "Telefonnummer",
@@ -78,6 +80,43 @@
     "date": "Datum",
     "time": "Uhrzeit",
     "message": "Nachricht",
-    "submit": "Tisch reservieren"
-  }
+    "submit": "Tisch reservieren",
+    "question": "Haben Sie eine Frage?",
+    "contact": "Kontaktieren Sie uns",
+    "lunchTime": "Mittagszeit",
+    "contactInfo": "Kontaktinformationen",
+    "dinnerTime": "Abendessen-Zeit"
+  },
+  "copyright": "Saigon Village Restaurant. Alle Rechte vorbehalten.",
+  "message": {
+    "title": "Nachricht an uns",
+    "description": "Haben Sie eine Frage zu unserem Service? Wir sind hier, um Ihnen zu helfen, kontaktieren Sie uns noch heute",
+    "name": "Ihr Name",
+    "phone": "Telefonnummer",
+    "email": "Ihre E-Mail",
+    "message": "Nachricht",
+    "submit": "Nachricht senden"
+  },
+  "openTime": "Öffnungszeiten",
+  "days": {
+    "monday": "Montag",
+    "tuesday": "Dienstag",
+    "wednesday": "Mittwoch",
+    "thursday": "Donnerstag",
+    "friday": "Freitag",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "holiday": "Feiertag"
+  },
+  "shortDays": {
+    "monday": "Mo",
+    "tuesday": "Di",
+    "wednesday": "Mi",
+    "thursday": "Do",
+    "friday": "Fr",
+    "saturday": "Sa",
+    "sunday": "So",
+    "holiday": "Feiert"
+  },
+  "and": "und"
 }

@@ -3,9 +3,11 @@ import Backgroundimage from "../../assets/images/background/FooterFoot1.jpg";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/vertical-logo.svg";
 import { restaurantInfo } from "../../constant";
+import { useTranslation } from "react-i18next";
 
 function Main() {
   const year = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -46,10 +48,35 @@ function Main() {
                         </li>
                         <li>
                           <Link to="tel:+4982150476359">
-                            Booking Request : {restaurantInfo.phone}
+                            {t("navbar.bookingRequest")} :{" "}
+                            {restaurantInfo.phone}
                           </Link>
                         </li>
-                        <li>{restaurantInfo.openTime}</li>
+                        <li>{t("openTime")}</li>
+                        <li>
+                          {t("shortDays.monday") +
+                            ": 11:30 - 14:30 / 17:30 - 21:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.tuesday") +
+                            "-" +
+                            t("shortDays.thursday") +
+                            ": 11:30 - 14:30 / 17:30 - 22:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.friday") +
+                            ": 11:30 - 14:30 / 17:30 - 23:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.saturday") +
+                            ": 12:00 - 15:00 / 17:30 - 23:00"}
+                        </li>
+                        <li>
+                          {t("shortDays.sunday") +
+                            " & " +
+                            t("shortDays.holiday") +
+                            ": 12:00 - 15:00 / 17:30 - 22:00"}
+                        </li>
                       </ul>
                     </div>
                     {/* <div className="separator">
@@ -98,19 +125,15 @@ function Main() {
                   <ul className="links">
                     <li>
                       {" "}
-                      <Link to="/">Home</Link>
+                      <Link to="/">{t("navbar.home")}</Link>
                     </li>
                     <li>
                       {" "}
-                      <Link to="/menu">Menu</Link>
+                      <Link to="/menu">{t("navbar.menu")}</Link>
                     </li>
                     <li>
                       {" "}
-                      <Link to="/about">About us</Link>
-                    </li>
-                    <li>
-                      {" "}
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact">{t("navbar.contact")}</Link>
                     </li>
                   </ul>
                 </div>
@@ -125,15 +148,30 @@ function Main() {
                   <ul className="links">
                     <li>
                       {" "}
-                      <Link to="https://www.facebook.com">facebook</Link>
+                      <Link
+                        target="_blank"
+                        to="https://www.facebook.com/profile.php?id=100070449729371"
+                      >
+                        facebook
+                      </Link>
                     </li>
                     <li>
                       {" "}
-                      <Link to="https://www.instagram.com">instagram</Link>
+                      <Link
+                        target="_blank"
+                        to="https://www.instagram.com/saigonvillage_restaurant/profilecard/?igsh=MWNtZmhkY3duOHB0ag=="
+                      >
+                        instagram
+                      </Link>
                     </li>
                     <li>
                       {" "}
-                      <Link to="https://www.google.com/maps">Google map</Link>
+                      <Link
+                        target="_blank"
+                        to="https://maps.app.goo.gl/RQkgNXPPHNxUTepc8"
+                      >
+                        Google map
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -145,7 +183,7 @@ function Main() {
         <div className="footer-bottom">
           <div className="auto-container">
             <div className="copyright">
-              &copy; {year} Saigon Village Restaurant. All Rights Reserved.
+              &copy; {year} {t("copyright")}
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Offer from "../../components/Menhome/Offer";
 // import MenuSection from "../../components/Menhome/MenuSection";
 // import Whyus from "../../components/Menhome/Whyus";
 // import Special from "../../components/Menhome/Special";
-import Contact from "../../components/Menhome/Contact";
+// import Contact from "../../components/Menhome/Contact";
 import { withHeader } from "../../hoc/withHeader";
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
       {/* <Specialdish /> */}
       {/* <MenuSection /> */}
       {/* <Special /> */}
-      <Contact />
+      {/* <Contact /> */}
       {/* <Whyus /> */}
       {/* <ChefSection /> */}
       {/* <Videosection /> */}

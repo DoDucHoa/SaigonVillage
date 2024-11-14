@@ -7393,3 +7393,53 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
   color: var(--white-color); /* Text color for options */
   padding: 10px;
 }
+
+/* Styling specific for the datepicker */
+.l-icon.datepicker {
+  padding-left: 35px; /* Adjust for the icon on the left */
+  color: #fff; /* White text color to match the rest of the fields */
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  border: none;
+  width: 100%; /* Ensures the input expands within its container */
+  height: 56px;
+  border: 1px solid var(--white-color-opacity-five);
+  border-radius: 16px;
+}
+
+.l-icon.datepicker:focus {
+  border-color: var(--main-color);
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  accent-color: white;
+}
+
+/* Adjusting placeholder color */
+.l-icon.datepicker::placeholder {
+  color: #666; /* Slightly lighter gray for the placeholder */
+}
+
+/* Styling for arrow icon on the right side */
+.arrow-icon {
+  transform: translateY(-50%);
+  color: #999;
+  margin-top: 0 !important;
+}
+
+.l-icon.timepicker {
+  padding-left: 35px; /* Adjust for the icon on the left */
+  color: #fff; /* White text color to match the rest of the fields */
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  border: none;
+  width: 100%; /* Ensures the input expands within its container */
+  height: 56px;
+  border: 1px solid var(--white-color-opacity-five);
+  border-radius: 16px;
+}
+
+.l-icon.timepicker:focus {
+  border-color: var(--main-color);
+}

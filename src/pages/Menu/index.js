@@ -1,5 +1,5 @@
 import React from "react";
-import Reservation from "../../components/Reservation";
+// import Reservation from "../../components/Reservation";
 import Bredcrumb from "../../components/Bredcrumb/Main";
 import Img from "../../assets/images/background/banner-image-2.jpg";
 import MenuSection from "../../components/Menhome/MenuSection";
@@ -12,7 +12,7 @@ function Menu() {
     <>
       <Bredcrumb subtitle={t("menu.menu")} title={t("menu.title")} Img={Img} />
       <MenuSection />
-      <Reservation />
+      {/* <Reservation /> */}
     </>
   );
 }

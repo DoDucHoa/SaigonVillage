@@ -104,21 +104,38 @@ function Header({ scrolled, isNavVisible }) {
             </ul>
           </div>
 
-          <h2>Visit Us</h2>
+          <h2>{t("navbar.visit")}</h2>
           <ul className="info">
             <li>{restaurantInfo.address}</li>
-            <li>{restaurantInfo.openTime}</li>
             <li>
               <Link to={"mailto:" + restaurantInfo.email}>
                 {restaurantInfo.email}
               </Link>
+            </li>
+            <li>{t("openTime")}</li>
+            <li>{t("shortDays.monday") + ": 11:30 - 14:30 / 17:30 - 21:00"}</li>
+            <li>
+              {t("shortDays.tuesday") +
+                "-" +
+                t("shortDays.thursday") +
+                ": 11:30 - 14:30 / 17:30 - 22:00"}
+            </li>
+            <li>{t("shortDays.friday") + ": 11:30 - 14:30 / 17:30 - 23:00"}</li>
+            <li>
+              {t("shortDays.saturday") + ": 12:00 - 15:00 / 17:30 - 23:00"}
+            </li>
+            <li>
+              {t("shortDays.sunday") +
+                " & " +
+                t("shortDays.holiday") +
+                ": 12:00 - 15:00 / 17:30 - 22:00"}
             </li>
           </ul>
           <div className="separator">
             <span></span>
           </div>
           <div className="booking-info">
-            <div className="bk-title">Booking request</div>
+            <div className="bk-title">{t("navbar.bookingRequest")}</div>
             <div className="bk-no">
               <Link to={"tel:" + restaurantInfo.phone}>
                 {restaurantInfo.phone}

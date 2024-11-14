@@ -46,35 +46,23 @@ const ContactForm = () => {
             <span className="alt-icon far fa-calendar"></span>
             <input
               className="l-icon datepicker"
-              type="text"
-              name="fieldname"
+              type="date"
+              name="date"
               placeholder="DD-MM-YYYY"
               required
-              readOnly
             />
-            <span className="arrow-icon far fa-angle-down"></span>
           </div>
         </div>
-        <div className="form-group col-lg-4 col-md-12 col-sm-12">
+        <div className="form-group col-lg-4 col-md-6 col-sm-12">
           <div className="field-inner">
             <span className="alt-icon far fa-clock"></span>
-            <select className="l-icon">
-              <option>08 : 00 am</option>
-              <option>09 : 00 am</option>
-              <option>10 : 00 am</option>
-              <option>11 : 00 am</option>
-              <option>12 : 00 pm</option>
-              <option>01 : 00 pm</option>
-              <option>02 : 00 pm</option>
-              <option>03 : 00 pm</option>
-              <option>04 : 00 pm</option>
-              <option>05 : 00 pm</option>
-              <option>06 : 00 pm</option>
-              <option>07 : 00 pm</option>
-              <option>08 : 00 pm</option>
-              <option>09 : 00 pm</option>
-              <option>10 : 00 pm</option>
-            </select>
+            <input
+              className="l-icon timepicker"
+              type="time"
+              name="time"
+              placeholder="HH:MM"
+              required
+            />
             <span className="arrow-icon far fa-angle-down"></span>
           </div>
         </div>

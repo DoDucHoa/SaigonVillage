@@ -13,9 +13,9 @@ const RestaurantHeadingInfo = () => {
                 <i className="icon far fa-map-marker-alt"></i>{" "}
                 {restaurantInfo.address}
               </li>
-              <li>
+              {/* <li>
                 <i className="icon far fa-clock"></i> {restaurantInfo.openTime}
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="top-right clearfix">

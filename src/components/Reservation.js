@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Bgone from "../assets/images/background/Restaurant1.jpg";
-import Bgtwo from "../assets/images/background/image-11.jpg";
+// import Bgtwo from "../assets/images/background/image-11.jpg";
 import { restaurantInfo } from "../constant";
 import ContactForm from "./ContactForm";
 

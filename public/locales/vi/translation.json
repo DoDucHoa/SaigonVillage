@@ -5,7 +5,9 @@
     "contact": "Liên Hệ",
     "menu": "Thực Đơn",
     "booking": "Đặt Bàn",
-    "language": "Ngôn Ngữ"
+    "language": "Ngôn Ngữ",
+    "visit": "Ghé Thăm Chúng Tôi",
+    "bookingRequest": "Yêu Cầu Đặt Bàn"
   },
   "banner": {
     "delight": "trải nghiệm thú vị",
@@ -69,15 +71,52 @@
     "description": "Khám phá hương vị phong phú và sống động của Việt Nam qua các món ăn được chọn lọc của chúng tôi. Từ những loại thảo mộc và gia vị tươi trong món Khai Vị Sài Gòn đến tô phở ấm áp, mỗi món ăn đều được chế biến để mang lại tinh hoa ẩm thực Việt Nam đến bàn ăn của bạn."
   },
   "contact": {
-    "title": "Đặt bàn trực tuyến",
-    "description1": "Gọi đến ",
+    "title": "Đặt Chỗ Trực Tuyến",
+    "description1": "Gọi tới",
     "description2": "hoặc điền vào biểu mẫu đặt hàng",
     "name": "Tên của bạn",
     "phone": "Số điện thoại",
-    "Person": "Số người",
+    "Person": "Người",
     "date": "Ngày",
     "time": "Thời gian",
-    "message": "Lời nhắn",
-    "submit": "Đặt bàn"
-  }
+    "message": "Tin nhắn",
+    "submit": "Đặt bàn",
+    "question": "Bạn có câu hỏi?",
+    "contact": "Liên hệ với chúng tôi",
+    "lunchTime": "Thời gian ăn trưa",
+    "contactInfo": "Thông tin liên hệ",
+    "dinnerTime": "Thời gian ăn tối"
+  },
+  "copyright": "Nhà hàng Saigon Village. Đã đăng ký bản quyền.",
+  "message": {
+    "title": "Gửi tin nhắn cho chúng tôi",
+    "description": "Bạn có câu hỏi về dịch vụ của chúng tôi? Chúng tôi sẵn sàng giúp đỡ, hãy liên hệ với chúng tôi hôm nay",
+    "name": "Tên của bạn",
+    "phone": "Số điện thoại",
+    "email": "Email của bạn",
+    "message": "Tin nhắn",
+    "submit": "Gửi tin nhắn của bạn"
+  },
+  "openTime": "Giờ mở cửa",
+  "days": {
+    "monday": "Thứ Hai",
+    "tuesday": "Thứ Ba",
+    "wednesday": "Thứ Tư",
+    "thursday": "Thứ Năm",
+    "friday": "Thứ Sáu",
+    "saturday": "Thứ Bảy",
+    "sunday": "Chủ Nhật",
+    "holiday": "Ngày lễ"
+  },
+  "shortDays": {
+    "monday": "T2",
+    "tuesday": "T3",
+    "wednesday": "T4",
+    "thursday": "T5",
+    "friday": "T6",
+    "saturday": "T7",
+    "sunday": "CN",
+    "holiday": "Ngày lễ"
+  },
+  "and": "và"
 }

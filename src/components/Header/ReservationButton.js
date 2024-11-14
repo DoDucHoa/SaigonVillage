@@ -7,7 +7,11 @@ export default function ReservationButton() {
     <>
       <div className="links-boxtwo clearfix">
         <div className="link link-btn">
-          <Link to="/reservation" className="theme-btn btn-style-one clearfix">
+          <Link
+            target="_blank"
+            to="https://www.quandoo.de/en/place/saigon-village-98291"
+            className="theme-btn btn-style-one clearfix"
+          >
             <span className="btn-wrap">
               <span className="text-one">{t("navbar.booking")}</span>
               <span className="text-two">{t("navbar.booking")}</span>

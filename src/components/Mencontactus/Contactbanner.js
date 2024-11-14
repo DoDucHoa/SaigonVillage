@@ -6,9 +6,11 @@ import bg6 from "../../assets/images/background/bg-6.png";
 import restro from "../../assets/images/background/ContactFoodBackground1.jpg";
 import { restaurantInfo } from "../../constant";
 import useDeviceType from "../../hooks/useDeviceType";
+import { useTranslation } from "react-i18next";
 
 function Contactbanner() {
   const isMobile = useDeviceType() === "mobile";
+  const { t } = useTranslation();
 
   return (
     <>
@@ -42,7 +44,7 @@ function Contactbanner() {
                     data-wow-duration="1500ms"
                     data-wow-delay="300ms"
                   >
-                    <h4>Lunch Time</h4>
+                    <h4>{t("contact.lunchTime")}</h4>
                     <div className="text">
                       {" "}
                       Monday to Sunday <br /> {restaurantInfo.lunchTime}
@@ -56,7 +58,7 @@ function Contactbanner() {
                     data-wow-duration="1500ms"
                     data-wow-delay="300ms"
                   >
-                    <h4>Contact Info</h4>
+                    <h4>{t("contact.contactInfo")}</h4>
                     <div className="text">
                       {restaurantInfo.address}
                       <br />
@@ -74,7 +76,7 @@ function Contactbanner() {
                     data-wow-duration="1500ms"
                     data-wow-delay="600ms"
                   >
-                    <h4>Dinner Time</h4>
+                    <h4>{t("contact.dinnerTime")}</h4>
                     <div className="text">
                       Monday to Sunday
                       <br />
@@ -92,11 +94,8 @@ function Contactbanner() {
             <div className="row clearfix">
               <div className="loc-block col-lg-6 col-md-12 col-sm-12">
                 <div className="title-box centered">
-                  <h2>Message us</h2>
-                  <div className="text desc">
-                    Have a question about the our service? We're here to help,
-                    contact us today
-                  </div>
+                  <h2>{t("message.title")}</h2>
+                  <div className="text desc">{t("message.description")}</div>
                 </div>
                 <div className="default-form reservation-form">
                   <form method="post" action="/">
@@ -106,7 +105,7 @@ function Contactbanner() {
                           <input
                             type="text"
                             name="fieldname"
-                            placeholder="Your Name"
+                            placeholder={t("message.name")}
                             required=""
                           />
                         </div>
@@ -116,7 +115,7 @@ function Contactbanner() {
                           <input
                             type="text"
                             name="fieldname"
-                            placeholder="Your Email"
+                            placeholder={t("message.email")}
                             required=""
                           />
                         </div>
@@ -126,7 +125,7 @@ function Contactbanner() {
                           <input
                             type="text"
                             name="fieldname"
-                            placeholder="Phone Number"
+                            placeholder={t("message.phone")}
                             required=""
                           />
                         </div>
@@ -136,7 +135,7 @@ function Contactbanner() {
                         <div className="field-inner">
                           <textarea
                             name="fieldname"
-                            placeholder="Special Request"
+                            placeholder={t("message.message")}
                             required=""
                           ></textarea>
                         </div>
@@ -148,8 +147,12 @@ function Contactbanner() {
                           className="theme-btn btn-style-one clearfix"
                         >
                           <span className="btn-wrap">
-                            <span className="text-one">send your message</span>
-                            <span className="text-two">send your message</span>
+                            <span className="text-one">
+                              {t("message.submit")}
+                            </span>
+                            <span className="text-two">
+                              {t("message.submit")}
+                            </span>
                           </span>
                         </button>
                       </div>
