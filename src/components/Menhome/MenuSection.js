@@ -5,8 +5,7 @@ import bgtwo from "../../assets/images/background/bg-6.png";
 import { TabsBox } from "../Menu/TabsBox";
 
 const MenuSection = () => {
-  const [activeTab, setActiveTab] = useState("weekday_lunch");
-  console.log(activeTab);
+  const [activeTab, setActiveTab] = useState("lunch");
 
   return (
     <section className="menu-section">

@@ -1,14 +1,15 @@
-import CrispyDuck from "../assets/images/menu/cirspy-duck.jpg";
-import BeefRicenoodle from "../assets/images/menu/beef-ricenoodle.jpg";
+import CrispyDuck from "../assets/images/menu/CrispyDuck.jpg";
+import BeefRicenoodle from "../assets/images/menu/BeefRicenoodle.jpg";
 import SpringrollRicenoodle from "../assets/images/menu/SpringrollRicenoodle.jpg";
-import TomaticSalmon from "../assets/images/menu/TOMATIC-SALMON.jpg";
-import CalamariOnTamarind from "../assets/images/menu/CALAMARI-ON-TAMARIND.jpg";
-import eight from "../assets/images/resource/menu-image-8.png";
-import nine from "../assets/images/resource/menu-image-9.png";
-import ten from "../assets/images/resource/menu-image-10.png";
+import TomaticSalmon from "../assets/images/menu/TomaticSalmon.jpg";
+import CalamariOnTamarind from "../assets/images/menu/CalamariOnTamarind.jpg";
+import SGLaLotRicenoodle from "../assets/images/menu/SGLaLotRicenoodle.jpg";
+import PrawnCurry from "../assets/images/menu/PrawnCurry.jpg";
+import GarlicPrawn from "../assets/images/menu/GarlicPrawn.jpg";
+import ChickenCurry from "../assets/images/menu/ChickenCurry.jpg";
 
 export const tabLabels = [
-  { id: "weekday_lunch", text: "menuCategories.weekday_lunch" },
+  { id: "lunch", text: "menuCategories.lunch" },
   { id: "dinner", text: "menuCategories.dinner" },
   { id: "desserts", text: "menuCategories.desserts" },
   { id: "soft_drinks", text: "menuCategories.soft_drinks" },
@@ -16,7 +17,7 @@ export const tabLabels = [
 ];
 
 export const dishData = {
-  weekday_lunch: [
+  lunch: [
     [
       {
         title: "food.DuckCurry.title",
@@ -78,6 +79,18 @@ export const dishData = {
         description: "food.SpringrollsRicenoodle.description",
         image: SpringrollRicenoodle,
       },
+      {
+        title: "food.SGLaLotRicenoodle.title",
+        price: 18.9,
+        description: "food.SGLaLotRicenoodle.description",
+        image: SGLaLotRicenoodle,
+      },
+      {
+        title: "food.GarlicPrawn.title",
+        price: 21.9,
+        description: "food.GarlicPrawn.description",
+        image: GarlicPrawn,
+      },
     ],
     [
       {
@@ -97,6 +110,18 @@ export const dishData = {
         price: 18.9,
         description: "food.SpringrollsRicenoodle.description",
         image: SpringrollRicenoodle,
+      },
+      {
+        title: "food.PrawnCurry.title",
+        price: 21.9,
+        description: "food.PrawnCurry.description",
+        image: PrawnCurry,
+      },
+      {
+        title: "food.ChickenCurry.title",
+        price: 18.9,
+        description: "food.ChickenCurry.description",
+        image: ChickenCurry,
       },
     ],
   ],

@@ -8,7 +8,7 @@ import Slidethree from "../../assets/images/background/HomePageFood3.jpg";
 import "swiper/swiper.min.css";
 import SwiperCore, { Navigation } from "swiper";
 import { useTranslation } from "react-i18next";
-import ReservationButton from "../Header/ReservationButton";
+// import ReservationButton from "../Header/ReservationButton";
 import useDeviceType from "../../hooks/useDeviceType";
 
 SwiperCore.use([Navigation]);
