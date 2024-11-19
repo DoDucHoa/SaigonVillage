@@ -1,123 +1,147 @@
 {
-  "navbar": {
-    "home": "Startseite",
-    "about": "Über uns",
-    "contact": "Kontakt",
-    "menu": "Menü",
-    "booking": "Reservierung",
-    "language": "Sprache",
-    "visit": "Besuchen Sie uns",
-    "bookingRequest": "Reservierungsanfrage"
-  },
-  "banner": {
-    "delight": "köstliches Erlebnis",
-    "flavorSection": {
-      "index_0": {
-        "line1": "Aromen inspiriert von",
-        "line2": "den Jahreszeiten"
-      },
-      "index_1": {
-        "line1": "Wo jeder Geschmack",
-        "line2": "eine Geschichte erzählt"
-      },
-      "index_2": {
-        "line1": "Für die Liebe zu",
-        "line2": "köstlichem Essen"
-      }
+    "navbar": {
+        "home": "Startseite",
+        "about": "Über uns",
+        "contact": "Kontakt",
+        "menu": "Menü",
+        "booking": "Reservierung",
+        "language": "Sprache",
+        "visit": "Besuchen Sie uns",
+        "bookingRequest": "Reservierungsanfrage"
     },
-    "comeWithFamily": "Kommen Sie mit der Familie und erleben Sie die Freude an köstlichem Essen",
-    "viewMenu": "unser Menü ansehen"
-  },
-  "menu": {
-    "menu": "Menü",
-    "title": "LECKER & FANTASTISCH"
-  },
-  "menuCategories": {
-    "lunch": "MITTAGESSEN",
-    "dinner": "ABENDESSEN",
-    "desserts": "DESSERTS",
-    "soft_drinks": "ALKOHOLFREIE GETRÄNKE",
-    "wines": "WEINE"
-  },
-  "food": {
-    "SaigonStarter": {
-      "title": "Saigon Starter",
-      "description": "für alle probierfreudigen Gourmets, hier die beliebtesten Vorspeisen auf einer Platte"
+    "banner": {
+        "delight": "köstliches Erlebnis",
+        "flavorSection": {
+            "index_0": {
+                "line1": "Aromen inspiriert von",
+                "line2": "den Jahreszeiten"
+            },
+            "index_1": {
+                "line1": "Wo jeder Geschmack",
+                "line2": "eine Geschichte erzählt"
+            },
+            "index_2": {
+                "line1": "Für die Liebe zu",
+                "line2": "köstlichem Essen"
+            }
+        },
+        "comeWithFamily": "Kommen Sie mit der Familie und erleben Sie die Freude an köstlichem Essen",
+        "viewMenu": "unser Menü ansehen"
     },
-    "DuckCurry": {
-      "title": "DUCK'N CURRY",
-      "description": "Kross gebackene Ente in einer roten Kokos-Curry-Soße, dazu frisches Gemüse, Basilikum mit Jasmin Duftreis"
+    "menu": {
+        "menu": "Menü",
+        "title": "LECKER & FANTASTISCH"
     },
-    "BeefRicenoodles": {
-      "title": "BEEF’N RICENOODLE",
-      "description": "Reisnudeln, zartes Rindfleisch, Knoblauch, mit einem Limetten-Ingwer-Dressing"
+    "menuCategories": {
+        "lunch": "MITTAGESSEN",
+        "dinner": "ABENDESSEN",
+        "desserts": "DESSERTS",
+        "soft_drinks": "ALKOHOLFREIE GETRÄNKE",
+        "wines": "WEINE"
     },
-    "SpringrollsRicenoodle": {
-      "title": "SPRINGROLLS'N RICENOODLE",
-      "description": "Reisnudeln, hausgemachte Frühlingsrollen, Knoblauch, Zwiebeln, verfeinert mit vietnam. Kräutern, abgeschmeckt mit einem Limetten-Ingwer-Dressing"
+    "food": {
+        "SaigonStarter": {
+            "title": "Saigon Starter",
+            "description": "für alle probierfreudigen Gourmets, hier die beliebtesten Vorspeisen auf einer Platte"
+        },
+        "DuckCurry": {
+            "title": "DUCK'N CURRY",
+            "description": "Kross gebackene Ente in einer roten Kokos-Curry-Soße, dazu frisches Gemüse, Basilikum mit Jasmin Duftreis"
+        },
+        "BeefRicenoodles": {
+            "title": "BEEF’N RICENOODLE",
+            "description": "Reisnudeln, zartes Rindfleisch, Knoblauch, mit einem Limetten-Ingwer-Dressing"
+        },
+        "SpringrollsRicenoodle": {
+            "title": "SPRINGROLLS'N RICENOODLE",
+            "description": "Reisnudeln, hausgemachte Frühlingsrollen, Knoblauch, Zwiebeln, verfeinert mit vietnam. Kräutern, abgeschmeckt mit einem Limetten-Ingwer-Dressing"
+        },
+        "TomaticSalmon": {
+            "title": "TOMATIC SALMON",
+            "description": "Frisch gegrilltes Lachsfilet auf einem im Wok geschwenkten Gemüsebett mit Tomaten, Lauchzwiebeln, verfeinert mit vietnam. Kräutern."
+        },
+        "CalamariOnTamarind": {
+            "title": "CALAMARI ON TAMARIND",
+            "description": "Knusprige Tintenfischringe in einer süß-sauren Tamarindensoße, dazu frischer Salat und Jasmin Duftreis"
+        },
+        "SGLaLotRicenoodle": {
+            "title": "SAIGON LA LOT RICENOODLE",
+            "description": "Reisnudeln, saftiges Rindfleisch, eingewickelt in einem aromatischen Pfefferblatt gegrillt, Knoblauch, Zwiebeln, verfeinert mit vietnamesischen Kräutern, abgeschmeckt mit einem Limetten-Ingwer-Dressing"
+        },
+        "GarlicPrawn": {
+            "title": "GARLIC PRAWNS",
+            "description": "XXL-garnelen mit frischem Gemüse in einer deftigen Knoblauchsoße, im Wok geschwenkt, mit einer braunen Soja-Reduktion."
+        },
+        "PrawnCurry": {
+            "title": "PRAWNS’N CURRY",
+            "description": "XXL-garnelen in einer roten Kokos-Curry-Soße, dazu frisches Gemüse, Basilikum mit Jasmin Duftreis"
+        },
+        "ChickenCurry": {
+            "title": "CHICKEN’N CURRY",
+            "description": "Kross gebackene Hühnerbruststreifen in einer roten Kokos Currysoße, dazu frisches Gemüse und Basilikum, dazu mit Jasmin Duftreis"
+        },
+        "FriedRicenoodleClassic": {
+            "title": "FRIED RICENOODLE CLASSIC",
+            "description": "Reisbandnudeln mit saisonalem Gemüse im Wok geschwenkt"
+        },
+        "StirFriedNoodle": {
+            "title": "STIR-FRIED UDON",
+            "description": "Würzige Nudeln aus dem Wok mit fr. saisonalem Gemüse."
+        }
     },
-    "TomaticSalmon": {
-      "title": "TOMATIC SALMON",
-      "description": "Frisch gegrilltes Lachsfilet auf einem im Wok geschwenkten Gemüsebett mit Tomaten, Lauchzwiebeln, verfeinert mit vietnam. Kräutern."
+    "offer": {
+        "title": "Der beste vietnamesische Geschmack",
+        "subtitle": "Echte vietnamesische Aromen",
+        "description": "Erleben Sie die Vielfalt Vietnams mit unseren ausgewählten Gerichten. Frische Kräuter, würzige Aromen und traditionelle Pho – jedes Gericht bringt das Wesen der vietnamesischen Küche auf Ihren Tisch."
     },
-    "CalamariOnTamarind": {
-      "title": "CALAMARI ON TAMARIND",
-      "description": "Knusprige Tintenfischringe in einer süß-sauren Tamarindensoße, dazu frischer Salat und Jasmin Duftreis"
-    }
-  },
-  "offer": {
-    "title": "Der beste vietnamesische Geschmack",
-    "subtitle": "Echte vietnamesische Aromen",
-    "description": "Erleben Sie die Vielfalt Vietnams mit unseren ausgewählten Gerichten. Frische Kräuter, würzige Aromen und traditionelle Pho – jedes Gericht bringt das Wesen der vietnamesischen Küche auf Ihren Tisch."
-  },
-  "contact": {
-    "title": "Online-Reservierung",
-    "description1": "Rufen Sie an unter",
-    "description2": "oder füllen Sie das Bestellformular aus",
-    "name": "Ihr Name",
-    "phone": "Telefonnummer",
-    "Person": "Personen",
-    "date": "Datum",
-    "time": "Uhrzeit",
-    "message": "Nachricht",
-    "submit": "Tisch reservieren",
-    "question": "Haben Sie eine Frage?",
-    "contact": "Kontaktieren Sie uns",
-    "lunchTime": "Mittagszeit",
-    "contactInfo": "Kontaktinformationen",
-    "dinnerTime": "Abendessen-Zeit",
-    "address": "Adresse"
-  },
-  "copyright": "Saigon Village Restaurant. Alle Rechte vorbehalten.",
-  "message": {
-    "title": "Nachricht an uns",
-    "description": "Haben Sie eine Frage zu unserem Service? Wir sind hier, um Ihnen zu helfen, kontaktieren Sie uns noch heute",
-    "name": "Ihr Name",
-    "phone": "Telefonnummer",
-    "email": "Ihre E-Mail",
-    "message": "Nachricht",
-    "submit": "Nachricht senden"
-  },
-  "openTime": "Öffnungszeiten",
-  "days": {
-    "monday": "Montag",
-    "tuesday": "Dienstag",
-    "wednesday": "Mittwoch",
-    "thursday": "Donnerstag",
-    "friday": "Freitag",
-    "saturday": "Samstag",
-    "sunday": "Sonntag",
-    "holiday": "Feiertag"
-  },
-  "shortDays": {
-    "monday": "Mo",
-    "tuesday": "Di",
-    "wednesday": "Mi",
-    "thursday": "Do",
-    "friday": "Fr",
-    "saturday": "Sa",
-    "sunday": "So",
-    "holiday": "Feiert"
-  },
-  "and": "und"
+    "contact": {
+        "title": "Online-Reservierung",
+        "description1": "Rufen Sie an unter",
+        "description2": "oder füllen Sie das Bestellformular aus",
+        "name": "Ihr Name",
+        "phone": "Telefonnummer",
+        "Person": "Personen",
+        "date": "Datum",
+        "time": "Uhrzeit",
+        "message": "Nachricht",
+        "submit": "Tisch reservieren",
+        "question": "Haben Sie eine Frage?",
+        "contact": "Kontaktieren Sie uns",
+        "lunchTime": "Mittagszeit",
+        "contactInfo": "Kontaktinformationen",
+        "dinnerTime": "Abendessen-Zeit",
+        "address": "Adresse"
+    },
+    "copyright": "Saigon Village Restaurant. Alle Rechte vorbehalten.",
+    "message": {
+        "title": "Nachricht an uns",
+        "description": "Haben Sie eine Frage zu unserem Service? Wir sind hier, um Ihnen zu helfen, kontaktieren Sie uns noch heute",
+        "name": "Ihr Name",
+        "phone": "Telefonnummer",
+        "email": "Ihre E-Mail",
+        "message": "Nachricht",
+        "submit": "Nachricht senden"
+    },
+    "openTime": "Öffnungszeiten",
+    "days": {
+        "monday": "Montag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch",
+        "thursday": "Donnerstag",
+        "friday": "Freitag",
+        "saturday": "Samstag",
+        "sunday": "Sonntag",
+        "holiday": "Feiertag"
+    },
+    "shortDays": {
+        "monday": "Mo",
+        "tuesday": "Di",
+        "wednesday": "Mi",
+        "thursday": "Do",
+        "friday": "Fr",
+        "saturday": "Sa",
+        "sunday": "So",
+        "holiday": "Feiert"
+    },
+    "and": "und"
 }

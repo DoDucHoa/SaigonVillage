@@ -1,123 +1,147 @@
 {
-  "navbar": {
-    "home": "Home",
-    "about": "About Us",
-    "contact": "Contact",
-    "menu": "Menu",
-    "booking": "Find a table",
-    "language": "Language",
-    "visit": "Visit Us",
-    "bookingRequest": "Booking Request"
-  },
-  "banner": {
-    "delight": "delightful experience",
-    "flavorSection": {
-      "index_0": {
-        "line1": "Flavors Inspired by",
-        "line2": "the Seasons"
-      },
-      "index_1": {
-        "line1": "Where every flavor",
-        "line2": "tells a story"
-      },
-      "index_2": {
-        "line1": "For the love of",
-        "line2": "delicious food"
-      }
+    "navbar": {
+        "home": "Home",
+        "about": "About Us",
+        "contact": "Contact",
+        "menu": "Menu",
+        "booking": "Find a table",
+        "language": "Language",
+        "visit": "Visit Us",
+        "bookingRequest": "Booking Request"
     },
-    "comeWithFamily": "Come with family & feel the joy of mouthwatering food",
-    "viewMenu": "view our menu"
-  },
-  "menu": {
-    "menu": "Menu",
-    "title": "DELICIOUS & AMAZING"
-  },
-  "menuCategories": {
-    "lunch": "LUNCH",
-    "dinner": "DINNER",
-    "desserts": "DESSERTS",
-    "soft_drinks": "SOFT DRINKS",
-    "wines": "WINES"
-  },
-  "food": {
-    "SaigonStarter": {
-      "title": "Saigon Starter",
-      "description": "For all adventurous gourmets, here are the most popular appetizers on a platter"
+    "banner": {
+        "delight": "delightful experience",
+        "flavorSection": {
+            "index_0": {
+                "line1": "Flavors Inspired by",
+                "line2": "the Seasons"
+            },
+            "index_1": {
+                "line1": "Where every flavor",
+                "line2": "tells a story"
+            },
+            "index_2": {
+                "line1": "For the love of",
+                "line2": "delicious food"
+            }
+        },
+        "comeWithFamily": "Come with family & feel the joy of mouthwatering food",
+        "viewMenu": "view our menu"
     },
-    "DuckCurry": {
-      "title": "DUCK'N CURRY",
-      "description": "Crispy baked duck in a red coconut curry sauce, with fresh vegetables, basil, and jasmine-scented rice"
+    "menu": {
+        "menu": "Menu",
+        "title": "DELICIOUS & AMAZING"
     },
-    "BeefRicenoodles": {
-      "title": "BEEF’N RICENOODLE",
-      "description": "Rice noodles, tender beef, garlic, with a lime-ginger dressing"
+    "menuCategories": {
+        "lunch": "LUNCH",
+        "dinner": "DINNER",
+        "desserts": "DESSERTS",
+        "soft_drinks": "SOFT DRINKS",
+        "wines": "WINES"
     },
-    "SpringrollsRicenoodle": {
-      "title": "SPRINGROLLS'N RICENOODLE",
-      "description": "Rice noodles, homemade spring rolls, garlic, onions, refined with Vietnamese herbs, seasoned with a lime-ginger dressing"
+    "food": {
+        "SaigonStarter": {
+            "title": "Saigon Starter",
+            "description": "For all adventurous gourmets, here are the most popular appetizers on a platter"
+        },
+        "DuckCurry": {
+            "title": "DUCK'N CURRY",
+            "description": "Crispy baked duck in a red coconut curry sauce, with fresh vegetables, basil, and jasmine-scented rice"
+        },
+        "BeefRicenoodles": {
+            "title": "BEEF’N RICENOODLE",
+            "description": "Rice noodles, tender beef, garlic, with a lime-ginger dressing"
+        },
+        "SpringrollsRicenoodle": {
+            "title": "SPRINGROLLS'N RICENOODLE",
+            "description": "Rice noodles, homemade spring rolls, garlic, onions, refined with Vietnamese herbs, seasoned with a lime-ginger dressing"
+        },
+        "TomaticSalmon": {
+            "title": "TOMATIC SALMON",
+            "description": "Freshly grilled salmon fillet on a bed of wok-tossed vegetables with tomatoes, green onions, refined with Vietnamese herbs"
+        },
+        "CalamariOnTamarind": {
+            "title": "CALAMARI ON TAMARIND",
+            "description": "Crispy squid rings in a sweet-sour tamarind sauce, served with fresh salad and jasmine-scented rice"
+        },
+        "SGLaLotRicenoodle": {
+            "title": "SAIGON LA LOT RICE NOODLE",
+            "description": "Rice noodles, juicy beef wrapped in an aromatic betel leaf and grilled, garlic, onions, refined with Vietnamese herbs, seasoned with a lime-ginger dressing"
+        },
+        "GarlicPrawn": {
+            "title": "GARLIC PRAWNS",
+            "description": "XXL prawns with fresh vegetables in a hearty garlic sauce, stir-fried in a wok, with a brown soy reduction."
+        },
+        "PrawnCurry": {
+            "title": "PRAWNS’N CURRY",
+            "description": "XXL prawns in a red coconut curry sauce, served with fresh vegetables, basil, and jasmine-scented rice."
+        },
+        "ChickenCurry": {
+            "title": "CHICKEN’N CURRY",
+            "description": "Crisp-fried chicken breast strips in a red coconut curry sauce, served with fresh vegetables, basil, and jasmine-scented rice."
+        },
+        "FriedRicenoodleClassic": {
+            "title": "FRIED RICE NOODLE CLASSIC",
+            "description": "Rice ribbon noodles stir-fried in a wok with seasonal vegetables."
+        },
+        "StirFriedNoodle": {
+            "title": "STIR-FRIED UDON",
+            "description": "Spicy noodles from the wok with fresh seasonal vegetables."
+        }
     },
-    "TomaticSalmon": {
-      "title": "TOMATIC SALMON",
-      "description": "Freshly grilled salmon fillet on a bed of wok-tossed vegetables with tomatoes, green onions, refined with Vietnamese herbs"
+    "offer": {
+        "title": "We offer the best Vietnamese taste",
+        "subtitle": "Origin Vietnamese Flavors",
+        "description": "Discover the rich and vibrant tastes of Vietnam with our curated dishes. From the fresh herbs and spices in our Saigon Starter to the warm, comforting bowl of Pho, each dish is crafted to bring the true essence of Vietnamese cuisine to your table."
     },
-    "CalamariOnTamarind": {
-      "title": "CALAMARI ON TAMARIND",
-      "description": "Crispy squid rings in a sweet-sour tamarind sauce, served with fresh salad and jasmine-scented rice"
-    }
-  },
-  "offer": {
-    "title": "We offer the best Vietnamese taste",
-    "subtitle": "Origin Vietnamese Flavors",
-    "description": "Discover the rich and vibrant tastes of Vietnam with our curated dishes. From the fresh herbs and spices in our Saigon Starter to the warm, comforting bowl of Pho, each dish is crafted to bring the true essence of Vietnamese cuisine to your table."
-  },
-  "contact": {
-    "title": "Online Reservation",
-    "description1": "Call to",
-    "description2": "or fill out the order form",
-    "name": "Your Name",
-    "phone": "Phone Number",
-    "Person": "Person",
-    "date": "Date",
-    "time": "Time",
-    "message": "Message",
-    "submit": "Book a table",
-    "question": "Any question?",
-    "contact": "Contact Us",
-    "lunchTime": "Lunch Time",
-    "contactInfo": "Contact Information",
-    "dinnerTime": "Dinner Time",
-    "address": "Address"
-  },
-  "copyright": "Saigon Village Restaurant. All Rights Reserved.",
-  "message": {
-    "title": "Message us",
-    "description": "Have a question about the our service? We're here to help, contact us today",
-    "name": "Your Name",
-    "phone": "Phone Number",
-    "email": "Your Email",
-    "message": "Message",
-    "submit": "Send your message"
-  },
-  "openTime": "Open Time",
-  "days": {
-    "monday": "Monday",
-    "tuesday": "Tuesday",
-    "wednesday": "Wednesday",
-    "thursday": "Thursday",
-    "friday": "Friday",
-    "saturday": "Saturday",
-    "sunday": "Sunday",
-    "holiday": "Holiday"
-  },
-  "shortDays": {
-    "monday": "Mon",
-    "tuesday": "Tue",
-    "wednesday": "Wed",
-    "thursday": "Thu",
-    "friday": "Fri",
-    "saturday": "Sat",
-    "sunday": "Sun",
-    "holiday": "Holiday"
-  },
-  "and": "and"
+    "contact": {
+        "title": "Online Reservation",
+        "description1": "Call to",
+        "description2": "or fill out the order form",
+        "name": "Your Name",
+        "phone": "Phone Number",
+        "Person": "Person",
+        "date": "Date",
+        "time": "Time",
+        "message": "Message",
+        "submit": "Book a table",
+        "question": "Any question?",
+        "contact": "Contact Us",
+        "lunchTime": "Lunch Time",
+        "contactInfo": "Contact Information",
+        "dinnerTime": "Dinner Time",
+        "address": "Address"
+    },
+    "copyright": "Saigon Village Restaurant. All Rights Reserved.",
+    "message": {
+        "title": "Message us",
+        "description": "Have a question about the our service? We're here to help, contact us today",
+        "name": "Your Name",
+        "phone": "Phone Number",
+        "email": "Your Email",
+        "message": "Message",
+        "submit": "Send your message"
+    },
+    "openTime": "Open Time",
+    "days": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "holiday": "Holiday"
+    },
+    "shortDays": {
+        "monday": "Mon",
+        "tuesday": "Tue",
+        "wednesday": "Wed",
+        "thursday": "Thu",
+        "friday": "Fri",
+        "saturday": "Sat",
+        "sunday": "Sun",
+        "holiday": "Holiday"
+    },
+    "and": "and"
 }

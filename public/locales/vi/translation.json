@@ -1,123 +1,147 @@
 {
-  "navbar": {
-    "home": "Trang Chủ",
-    "about": "Về Chúng Tôi",
-    "contact": "Liên Hệ",
-    "menu": "Thực Đơn",
-    "booking": "Đặt Bàn",
-    "language": "Ngôn Ngữ",
-    "visit": "Ghé Thăm Chúng Tôi",
-    "bookingRequest": "Yêu Cầu Đặt Bàn"
-  },
-  "banner": {
-    "delight": "trải nghiệm thú vị",
-    "flavorSection": {
-      "index_0": {
-        "line1": "Hương vị lấy cảm hứng từ",
-        "line2": "các Mùa"
-      },
-      "index_1": {
-        "line1": "Nơi mà mỗi hương vị",
-        "line2": "kể một câu chuyện"
-      },
-      "index_2": {
-        "line1": "Vì tình yêu dành cho",
-        "line2": "thức ăn ngon"
-      }
+    "navbar": {
+        "home": "Trang Chủ",
+        "about": "Về Chúng Tôi",
+        "contact": "Liên Hệ",
+        "menu": "Thực Đơn",
+        "booking": "Đặt Bàn",
+        "language": "Ngôn Ngữ",
+        "visit": "Ghé Thăm Chúng Tôi",
+        "bookingRequest": "Yêu Cầu Đặt Bàn"
     },
-    "comeWithFamily": "Hãy đến với gia đình và cảm nhận niềm vui của những món ăn ngon miệng",
-    "viewMenu": "xem thực đơn của chúng tôi"
-  },
-  "menu": {
-    "menu": "Thực đơn",
-    "title": "Thơm Ngon & Tuyệt Vời"
-  },
-  "menuCategories": {
-    "weekday_lunch": "BỮA TRƯA",
-    "dinner": "BỮA TỐI",
-    "desserts": "TRÁNG MIỆNG",
-    "soft_drinks": "NƯỚC NGỌT",
-    "wines": "RƯỢU VANG"
-  },
-  "food": {
-    "SaigonStarter": {
-      "title": "Khai Vị Sài Gòn",
-      "description": "Dành cho tất cả những người sành ăn thích khám phá, đây là những món khai vị phổ biến nhất trên một đĩa"
+    "banner": {
+        "delight": "trải nghiệm thú vị",
+        "flavorSection": {
+            "index_0": {
+                "line1": "Hương vị lấy cảm hứng từ",
+                "line2": "các Mùa"
+            },
+            "index_1": {
+                "line1": "Nơi mà mỗi hương vị",
+                "line2": "kể một câu chuyện"
+            },
+            "index_2": {
+                "line1": "Vì tình yêu dành cho",
+                "line2": "thức ăn ngon"
+            }
+        },
+        "comeWithFamily": "Hãy đến với gia đình và cảm nhận niềm vui của những món ăn ngon miệng",
+        "viewMenu": "xem thực đơn của chúng tôi"
     },
-    "DuckCurry": {
-      "title": "VỊT VÀ CÀ RI",
-      "description": "Vịt nướng giòn trong sốt cà ri dừa đỏ, kèm rau tươi, húng quế và cơm thơm hoa nhài"
+    "menu": {
+        "menu": "Thực đơn",
+        "title": "Thơm Ngon & Tuyệt Vời"
     },
-    "BeefRicenoodles": {
-      "title": "BÒ VÀ BÚN GẠO",
-      "description": "Bún gạo, thịt bò mềm, tỏi, với nước sốt chanh gừng"
+    "menuCategories": {
+        "weekday_lunch": "BỮA TRƯA",
+        "dinner": "BỮA TỐI",
+        "desserts": "TRÁNG MIỆNG",
+        "soft_drinks": "NƯỚC NGỌT",
+        "wines": "RƯỢU VANG"
     },
-    "SpringrollsRicenoodle": {
-      "title": "CHẢ GIÒ VÀ BÚN GẠO",
-      "description": "Bún gạo, chả giò tự làm, tỏi, hành tây, kết hợp với các loại thảo mộc Việt Nam, và nêm với nước sốt chanh gừng"
+    "food": {
+        "SaigonStarter": {
+            "title": "Khai Vị Sài Gòn",
+            "description": "Dành cho tất cả những người sành ăn thích khám phá, đây là những món khai vị phổ biến nhất trên một đĩa"
+        },
+        "DuckCurry": {
+            "title": "VỊT VÀ CÀ RI",
+            "description": "Vịt nướng giòn trong sốt cà ri dừa đỏ, kèm rau tươi, húng quế và cơm thơm hoa nhài"
+        },
+        "BeefRicenoodles": {
+            "title": "BÒ VÀ BÚN GẠO",
+            "description": "Bún gạo, thịt bò mềm, tỏi, với nước sốt chanh gừng"
+        },
+        "SpringrollsRicenoodle": {
+            "title": "CHẢ GIÒ VÀ BÚN GẠO",
+            "description": "Bún gạo, chả giò tự làm, tỏi, hành tây, kết hợp với các loại thảo mộc Việt Nam, và nêm với nước sốt chanh gừng"
+        },
+        "TomaticSalmon": {
+            "title": "CÁ HỒI VÀ CÀ CHUA",
+            "description": "Phi lê cá hồi nướng trên một đĩa rau xào với cà chua, hành lá, và các loại thảo mộc Việt Nam"
+        },
+        "CalamariOnTamarind": {
+            "title": "MỰC SỐT ME",
+            "description": "Mực chiên giòn trong sốt me chua ngọt, kèm với salad tươi và cơm thơm hoa nhài"
+        },
+        "SGLaLotRicenoodle": {
+            "title": "BÚN LÁ LỐT SÀI GÒN",
+            "description": "Bún, thịt bò mọng nước được gói trong lá lốt thơm và nướng, tỏi, hành, kết hợp với các loại thảo mộc Việt Nam, nêm với nước sốt chanh-gừng"
+        },
+        "GarlicPrawn": {
+            "title": "TÔM SỐT TỎI",
+            "description": "Tôm XXL cùng rau củ tươi trong sốt tỏi đậm đà, xào trên chảo wok, với nước sốt nâu từ đậu nành."
+        },
+        "PrawnCurry": {
+            "title": "TÔM VỚI CÀ RI",
+            "description": "Tôm XXL trong sốt cà ri dừa đỏ, kèm rau củ tươi, húng quế và cơm hương nhài."
+        },
+        "ChickenCurry": {
+            "title": "GÀ VỚI CÀ RI",
+            "description": "Thịt gà phi lê chiên giòn trong sốt cà ri dừa đỏ, kèm rau củ tươi, húng quế và cơm hương nhài."
+        },
+        "FriedRicenoodleClassic": {
+            "title": "BÚN XÀO TRUYỀN THỐNG",
+            "description": "Bún sợi to xào trên chảo wok với rau củ theo mùa."
+        },
+        "StirFriedNoodle": {
+            "title": "MÌ UDON XÀO",
+            "description": "Mì cay xào trên chảo wok với rau củ tươi theo mùa."
+        }
     },
-    "TomaticSalmon": {
-      "title": "CÁ HỒI VÀ CÀ CHUA",
-      "description": "Phi lê cá hồi nướng trên một đĩa rau xào với cà chua, hành lá, và các loại thảo mộc Việt Nam"
+    "offer": {
+        "title": "Chúng tôi mang đến hương vị Việt Nam tốt nhất",
+        "subtitle": "Hương vị Việt Nam gốc",
+        "description": "Khám phá hương vị phong phú và sống động của Việt Nam qua các món ăn được chọn lọc của chúng tôi. Từ những loại thảo mộc và gia vị tươi trong món Khai Vị Sài Gòn đến tô phở ấm áp, mỗi món ăn đều được chế biến để mang lại tinh hoa ẩm thực Việt Nam đến bàn ăn của bạn."
     },
-    "CalamariOnTamarind": {
-      "title": "MỰC SỐT ME",
-      "description": "Mực chiên giòn trong sốt me chua ngọt, kèm với salad tươi và cơm thơm hoa nhài"
-    }
-  },
-  "offer": {
-    "title": "Chúng tôi mang đến hương vị Việt Nam tốt nhất",
-    "subtitle": "Hương vị Việt Nam gốc",
-    "description": "Khám phá hương vị phong phú và sống động của Việt Nam qua các món ăn được chọn lọc của chúng tôi. Từ những loại thảo mộc và gia vị tươi trong món Khai Vị Sài Gòn đến tô phở ấm áp, mỗi món ăn đều được chế biến để mang lại tinh hoa ẩm thực Việt Nam đến bàn ăn của bạn."
-  },
-  "contact": {
-    "title": "Đặt Chỗ Trực Tuyến",
-    "description1": "Gọi tới",
-    "description2": "hoặc điền vào biểu mẫu đặt hàng",
-    "name": "Tên của bạn",
-    "phone": "Số điện thoại",
-    "Person": "Người",
-    "date": "Ngày",
-    "time": "Thời gian",
-    "message": "Tin nhắn",
-    "submit": "Đặt bàn",
-    "question": "Bạn có câu hỏi?",
-    "contact": "Liên hệ với chúng tôi",
-    "lunchTime": "Thời gian ăn trưa",
-    "contactInfo": "Thông tin liên hệ",
-    "dinnerTime": "Thời gian ăn tối",
-    "address": "Địa chỉ"
-  },
-  "copyright": "Nhà hàng Saigon Village. Đã đăng ký bản quyền.",
-  "message": {
-    "title": "Gửi tin nhắn cho chúng tôi",
-    "description": "Bạn có câu hỏi về dịch vụ của chúng tôi? Chúng tôi sẵn sàng giúp đỡ, hãy liên hệ với chúng tôi hôm nay",
-    "name": "Tên của bạn",
-    "phone": "Số điện thoại",
-    "email": "Email của bạn",
-    "message": "Tin nhắn",
-    "submit": "Gửi tin nhắn của bạn"
-  },
-  "openTime": "Giờ mở cửa",
-  "days": {
-    "monday": "Thứ Hai",
-    "tuesday": "Thứ Ba",
-    "wednesday": "Thứ Tư",
-    "thursday": "Thứ Năm",
-    "friday": "Thứ Sáu",
-    "saturday": "Thứ Bảy",
-    "sunday": "Chủ Nhật",
-    "holiday": "Ngày lễ"
-  },
-  "shortDays": {
-    "monday": "T2",
-    "tuesday": "T3",
-    "wednesday": "T4",
-    "thursday": "T5",
-    "friday": "T6",
-    "saturday": "T7",
-    "sunday": "CN",
-    "holiday": "Ngày lễ"
-  },
-  "and": "và"
+    "contact": {
+        "title": "Đặt Chỗ Trực Tuyến",
+        "description1": "Gọi tới",
+        "description2": "hoặc điền vào biểu mẫu đặt hàng",
+        "name": "Tên của bạn",
+        "phone": "Số điện thoại",
+        "Person": "Người",
+        "date": "Ngày",
+        "time": "Thời gian",
+        "message": "Tin nhắn",
+        "submit": "Đặt bàn",
+        "question": "Bạn có câu hỏi?",
+        "contact": "Liên hệ với chúng tôi",
+        "lunchTime": "Thời gian ăn trưa",
+        "contactInfo": "Thông tin liên hệ",
+        "dinnerTime": "Thời gian ăn tối",
+        "address": "Địa chỉ"
+    },
+    "copyright": "Nhà hàng Saigon Village. Đã đăng ký bản quyền.",
+    "message": {
+        "title": "Gửi tin nhắn cho chúng tôi",
+        "description": "Bạn có câu hỏi về dịch vụ của chúng tôi? Chúng tôi sẵn sàng giúp đỡ, hãy liên hệ với chúng tôi hôm nay",
+        "name": "Tên của bạn",
+        "phone": "Số điện thoại",
+        "email": "Email của bạn",
+        "message": "Tin nhắn",
+        "submit": "Gửi tin nhắn của bạn"
+    },
+    "openTime": "Giờ mở cửa",
+    "days": {
+        "monday": "Thứ Hai",
+        "tuesday": "Thứ Ba",
+        "wednesday": "Thứ Tư",
+        "thursday": "Thứ Năm",
+        "friday": "Thứ Sáu",
+        "saturday": "Thứ Bảy",
+        "sunday": "Chủ Nhật",
+        "holiday": "Ngày lễ"
+    },
+    "shortDays": {
+        "monday": "T2",
+        "tuesday": "T3",
+        "wednesday": "T4",
+        "thursday": "T5",
+        "friday": "T6",
+        "saturday": "T7",
+        "sunday": "CN",
+        "holiday": "Ngày lễ"
+    },
+    "and": "và"
 }

@@ -7,6 +7,8 @@ import SGLaLotRicenoodle from "../assets/images/menu/SGLaLotRicenoodle.jpg";
 import PrawnCurry from "../assets/images/menu/PrawnCurry.jpg";
 import GarlicPrawn from "../assets/images/menu/GarlicPrawn.jpg";
 import ChickenCurry from "../assets/images/menu/ChickenCurry.jpg";
+import FriedRicenoodleClassic from "../assets/images/menu/FriedRicenoodleClassic.jpg";
+import StirFriedNoodle from "../assets/images/menu/StirFriedNoodle.jpg";
 
 export const tabLabels = [
   { id: "lunch", text: "menuCategories.lunch" },
@@ -91,6 +93,12 @@ export const dishData = {
         description: "food.GarlicPrawn.description",
         image: GarlicPrawn,
       },
+      {
+        title: "food.FriedRicenoodleClassic.title",
+        price: 18.9,
+        description: "food.FriedRicenoodleClassic.description",
+        image: FriedRicenoodleClassic,
+      },
     ],
     [
       {
@@ -122,6 +130,12 @@ export const dishData = {
         price: 18.9,
         description: "food.ChickenCurry.description",
         image: ChickenCurry,
+      },
+      {
+        title: "food.StirFriedNoodle.title",
+        price: 18.9,
+        description: "food.StirFriedNoodle.description",
+        image: StirFriedNoodle,
       },
     ],
   ],
