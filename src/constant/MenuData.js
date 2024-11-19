@@ -11,8 +11,16 @@ import FriedRicenoodleClassic from "../assets/images/menu/FriedRicenoodleClassic
 import StirFriedNoodle from "../assets/images/menu/StirFriedNoodle.jpg";
 
 export const tabLabels = [
-  { id: "lunch", text: "menuCategories.lunch" },
-  { id: "dinner", text: "menuCategories.dinner" },
+  {
+    id: "lunch",
+    text: "menuCategories.lunch",
+    link: "https://www.canva.com/design/DAGWEyjVN_o/hArx_3cDF4wmLnbNHZdQuQ/view?embed",
+  },
+  {
+    id: "dinner",
+    text: "menuCategories.dinner",
+    link: "https://www.canva.com/design/DAGW9fdi6xQ/DGO1zDKLA6VV1RgWpeRGJg/view?embed",
+  },
   { id: "desserts", text: "menuCategories.desserts" },
   { id: "soft_drinks", text: "menuCategories.soft_drinks" },
   { id: "wines", text: "menuCategories.wines" },
