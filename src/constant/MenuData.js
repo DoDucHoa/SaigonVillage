@@ -21,9 +21,9 @@ export const tabLabels = [
     text: "menuCategories.dinner",
     link: "https://www.canva.com/design/DAGW9fdi6xQ/DGO1zDKLA6VV1RgWpeRGJg/view?embed",
   },
-  { id: "desserts", text: "menuCategories.desserts" },
-  { id: "soft_drinks", text: "menuCategories.soft_drinks" },
-  { id: "wines", text: "menuCategories.wines" },
+  // { id: "desserts", text: "menuCategories.desserts" },
+  // { id: "soft_drinks", text: "menuCategories.soft_drinks" },
+  // { id: "wines", text: "menuCategories.wines" },
 ];
 
 export const dishData = {
