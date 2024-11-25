@@ -1,5 +1,5 @@
 import React from "react";
-import Backgroundimage from "../../assets/images/background/FooterFoot1.jpg";
+import Backgroundimage from "../../assets/images/background/FooterBackground1.jpg";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/vertical-logo.svg";
 import { restaurantInfo } from "../../constant";

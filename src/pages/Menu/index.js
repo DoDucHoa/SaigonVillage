@@ -1,7 +1,7 @@
 import React from "react";
 // import Reservation from "../../components/Reservation";
 import Bredcrumb from "../../components/Bredcrumb/Main";
-import Img from "../../assets/images/background/banner-image-2.jpg";
+import Img from "../../assets/images/background/MenuBackgroundHeader1.jpg";
 import MenuSection from "../../components/Menhome/MenuSection";
 import { withHeader } from "../../hoc/withHeader";
 import { useTranslation } from "react-i18next";
