@@ -33,8 +33,9 @@
         "title": "Thơm Ngon & Tuyệt Vời"
     },
     "menuCategories": {
-        "weekday_lunch": "BỮA TRƯA",
+        "lunch": "BỮA TRƯA",
         "dinner": "BỮA TỐI",
+        "christmas": "GIÁNG SINH",
         "desserts": "TRÁNG MIỆNG",
         "soft_drinks": "NƯỚC NGỌT",
         "wines": "RƯỢU VANG"

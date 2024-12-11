@@ -33,8 +33,9 @@
         "title": "LECKER & FANTASTISCH"
     },
     "menuCategories": {
-        "lunch": "MITTAGESSEN",
-        "dinner": "ABENDESSEN",
+        "lunch": "Mittagsmenü",
+        "dinner": "Abendmenü",
+        "christmas": "Weihnachtsmenü",
         "desserts": "DESSERTS",
         "soft_drinks": "ALKOHOLFREIE GETRÄNKE",
         "wines": "WEINE"

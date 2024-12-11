@@ -1,25 +1,19 @@
-import { dishData, tabLabels } from "../../constant/MenuData";
-import DishColumns from "./DishColumns";
+import PropTypes from "prop-types";
+import { tabLabels } from "../../constant/MenuData";
 import EmbeddedCanvaDesign from "./EmbeddedCanvaDesign";
 
-export const TabsContent = ({ activeTab }) => (
-  <div className="tabs-content">
-    {tabLabels.map((label) => {
-      if (activeTab !== label.id) return null; // Skip rendering for inactive tabs
+export const TabsContent = ({ activeTab }) => {
+  const activeLabel = tabLabels.find((label) => label.id === activeTab);
 
-      if (label.id === "lunch") {
-        return <EmbeddedCanvaDesign key={label.id} embedLink={label.link} />;
-      }
+  if (!activeLabel) return null;
 
-      if (label.id === "dinner") {
-        return <EmbeddedCanvaDesign key={label.id} embedLink={label.link} />;
-      }
+  return (
+    <div className="tabs-content">
+      <EmbeddedCanvaDesign key={activeLabel.id} embedLink={activeLabel.link} />
+    </div>
+  );
+};
 
-      return (
-        <div key={label.id} className="tab active-tab" id={label.id}>
-          <DishColumns dishes={dishData[label.id]} />
-        </div>
-      );
-    })}
-  </div>
-);
+TabsContent.propTypes = {
+  activeTab: PropTypes.string.isRequired,
+};

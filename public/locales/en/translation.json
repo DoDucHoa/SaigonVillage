@@ -35,6 +35,7 @@
     "menuCategories": {
         "lunch": "LUNCH",
         "dinner": "DINNER",
+        "christmas": "CHRISTMAS",
         "desserts": "DESSERTS",
         "soft_drinks": "SOFT DRINKS",
         "wines": "WINES"
