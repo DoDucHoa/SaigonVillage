@@ -15,3 +15,5 @@ export const tabLabels = [
     link: "https://www.canva.com/design/DAGWEyjVN_o/hArx_3cDF4wmLnbNHZdQuQ/view?embed",
   },
 ];
+
+export const DEFAULT_TAB = tabLabels[0].id;

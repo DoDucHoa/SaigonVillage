@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import bgone from "../../assets/images/background/bg-5.png";
 import bgtwo from "../../assets/images/background/bg-6.png";
 import { TabsBox } from "../Menu/TabsBox";
+import { DEFAULT_TAB } from "../../constant/MenuData";
 
 const MenuSection = () => {
-  const [activeTab, setActiveTab] = useState("lunch");
+  const [activeTab, setActiveTab] = useState(DEFAULT_TAB);
 
   return (
     <section className="menu-section">
