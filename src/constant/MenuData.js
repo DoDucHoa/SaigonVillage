@@ -7,7 +7,7 @@ export const tabLabels = [
   {
     id: "dinner",
     text: "menuCategories.dinner",
-    link: "https://www.canva.com/design/DAGW9fdi6xQ/DGO1zDKLA6VV1RgWpeRGJg/view?embed",
+    link: "https://www.canva.com/design/DAGZ1yI4yXk/6cMKgct94RxfSOjjEQfAEw/view?embed",
   },
   {
     id: "lunch",
