@@ -12,7 +12,7 @@ export const tabLabels = [
   {
     id: "lunch",
     text: "menuCategories.lunch",
-    link: "https://www.canva.com/design/DAGWEyjVN_o/hArx_3cDF4wmLnbNHZdQuQ/view?embed",
+    link: "https://www.canva.com/design/DAGaa0jf38I/kbz9tsHp4QacmDc9to2m5Q/view?embed",
   },
 ];
 
