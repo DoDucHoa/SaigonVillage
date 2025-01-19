@@ -161,7 +161,7 @@ function Header({ scrolled, isNavVisible }) {
                         src={hori_logo}
                         alt=""
                         title={restaurantInfo.name}
-                        style={{ width: 300, height: 130 }}
+                        style={{ width: 300, height: 160 }}
                       />
                     </Link>
                   </div>
