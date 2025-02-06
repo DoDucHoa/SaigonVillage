@@ -107,7 +107,7 @@ function Banner() {
                               <div className="link" style={{ marginTop: 50 }}>
                                 <Link
                                   target="_blank"
-                                  to="https://www.quandoo.de/en/place/saigon-village-98291"
+                                  to="https://eat.allo.restaurant/restaurant/saigon-village?booking=true"
                                   className="theme-btn btn-style-two clearfix"
                                 >
                                   <span className="btn-wrap">
