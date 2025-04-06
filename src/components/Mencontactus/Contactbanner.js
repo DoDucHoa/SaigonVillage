@@ -60,14 +60,6 @@ function Contactbanner() {
                       <ul>
                         <li>
                           {t("shortDays.monday") +
-                            ": 11:30 - 14:30 / 17:30 - 21:00"}
-                        </li>
-                        <li>
-                          {t("shortDays.monday") +
-                            ": 11:30 - 14:30 / 17:30 - 21:00"}
-                        </li>
-                        <li>
-                          {t("shortDays.tuesday") +
                             "-" +
                             t("shortDays.thursday") +
                             ": 11:30 - 14:30 / 17:30 - 22:00"}

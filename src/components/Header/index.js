@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { memo, useState } from "react";
+import { memo, useCallback, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import hori_logo from "../../assets/images/horizon-logo.svg";
 import verti_logo from "../../assets/images/vertical-logo.svg";
@@ -8,44 +8,57 @@ import RestaurantHeadingInfo from "./RestaurantHeadingInfo";
 import ReservationButton from "./ReservationButton";
 import useDeviceType from "../../hooks/useDeviceType";
 
-const PAGE_URL = [
-  {
-    name: "navbar.home",
-    url: "/",
-  },
-  {
-    name: "navbar.menu",
-    url: "/menu",
-  },
-  // {
-  //   name: "navbar.about",
-  //   url: "/about",
-  // },
-  {
-    name: "navbar.contact",
-    url: "/contact",
-  },
-];
-
 function Header({ scrolled, isNavVisible }) {
+  const PAGE_URL = useMemo(
+    () => [
+      {
+        name: "navbar.home",
+        url: "/",
+      },
+      {
+        name: "navbar.menu",
+        url: "/menu",
+      },
+      // {
+      //   name: "navbar.about",
+      //   url: "/about",
+      // },
+      {
+        name: "navbar.contact",
+        url: "/contact",
+      },
+    ],
+    []
+  );
   const { pathname } = useLocation();
   const isMobile = useDeviceType() === "mobile";
   const { t, i18n } = useTranslation();
   const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
 
+  const restaurantAddress = useMemo(() => restaurantInfo.address, []);
+  const restaurantPhone = useMemo(() => restaurantInfo.phone, []);
+  const restaurantEmail = useMemo(() => restaurantInfo.email, []);
+  const restaurantName = useMemo(() => restaurantInfo.name, []);
+
   const currentClass = (page) => pathname === page.url && "current";
 
-  const languages = [
-    { code: "en", label: "English" },
-    { code: "vi", label: "Tiếng Việt" },
-    { code: "de", label: "Deutsch" },
-  ];
+  const languages = useMemo(
+    () => [
+      { code: "en", label: "English" },
+      { code: "vi", label: "Tiếng Việt" },
+      { code: "de", label: "Deutsch" },
+    ],
+    []
+  );
 
-  const handleLanguageChange = (event) => {
-    const selectedLanguage = event.target.value;
-    i18n.changeLanguage(selectedLanguage);
-  };
+  const handleLanguageChange = useCallback(
+    (event) => {
+      const selectedLanguage = event.target.value;
+      i18n.changeLanguage(selectedLanguage);
+    },
+    [i18n]
+  );
 
   return (
     <>
@@ -106,16 +119,13 @@ function Header({ scrolled, isNavVisible }) {
 
           <h2>{t("navbar.visit")}</h2>
           <ul className="info">
-            <li>{restaurantInfo.address}</li>
+            <li>{restaurantAddress}</li>
             <li>
-              <Link to={"mailto:" + restaurantInfo.email}>
-                {restaurantInfo.email}
-              </Link>
+              <Link to={"mailto:" + restaurantEmail}>{restaurantEmail}</Link>
             </li>
             <li>{t("openTime")}</li>
-            <li>{t("shortDays.monday") + ": 11:30 - 14:30 / 17:30 - 21:00"}</li>
             <li>
-              {t("shortDays.tuesday") +
+              {t("shortDays.monday") +
                 "-" +
                 t("shortDays.thursday") +
                 ": 11:30 - 14:30 / 17:30 - 22:00"}
@@ -137,9 +147,7 @@ function Header({ scrolled, isNavVisible }) {
           <div className="booking-info">
             <div className="bk-title">{t("navbar.bookingRequest")}</div>
             <div className="bk-no">
-              <Link to={"tel:" + restaurantInfo.phone}>
-                {restaurantInfo.phone}
-              </Link>
+              <Link to={"tel:" + restaurantPhone}>{restaurantPhone}</Link>
             </div>
           </div>
         </div>
@@ -156,11 +164,11 @@ function Header({ scrolled, isNavVisible }) {
               <div className="main-box">
                 <div className="logo-boxtwo">
                   <div className="logo">
-                    <Link to="/" title={restaurantInfo.name}>
+                    <Link to="/" title={restaurantName}>
                       <img
                         src={hori_logo}
                         alt=""
-                        title={restaurantInfo.name}
+                        title={restaurantName}
                         style={{ width: 300, height: 130 }}
                       />
                     </Link>

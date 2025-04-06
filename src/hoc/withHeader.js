@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import Header from "../components/Header";
+import { lazy, Suspense, useEffect, useState } from "react";
 
 export const withHeader = (Component) => {
+  const Header = lazy(() => import("../components/Header"));
   return (props) => {
     const [scrolled, setScrolled] = useState(false);
     const [isNavVisible, setIsNavVisible] = useState(true);
@@ -25,7 +25,9 @@ export const withHeader = (Component) => {
 
     return (
       <>
-        <Header isNavVisible={isNavVisible} scrolled={scrolled} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Header isNavVisible={isNavVisible} scrolled={scrolled} />
+        </Suspense>
         <Component {...props} />
       </>
     );
