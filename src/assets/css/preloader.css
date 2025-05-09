@@ -1,7 +1,7 @@
 /* Preloader */
 
 .handle-preloader {
-  background-color: #e4c590;
+  background-color: #171819;
 }
 
 .handle-preloader {
@@ -46,6 +46,7 @@
   height: 150px;
   margin: 0 auto 45px auto;
   width: 150px;
+  border: 3px solid var(--main-color);
 }
 
 .handle-preloader .animation-preloader .txt-loading {
@@ -73,7 +74,7 @@
   color: transparent;
   -webkit-text-stroke-width: 1px;
 
-  -webkit-text-stroke-color: rgba(17, 17, 17, 0.5);
+  -webkit-text-stroke-color: var(--main-color);
 }
 
 .handle-preloader
