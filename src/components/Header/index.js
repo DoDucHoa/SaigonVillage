@@ -1,64 +1,22 @@
 import { Link, useLocation } from "react-router-dom";
-import { memo, useCallback, useMemo, useState } from "react";
+import { memo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import hori_logo from "../../assets/images/horizon-logo.svg";
 import verti_logo from "../../assets/images/vertical-logo.svg";
-import { restaurantInfo } from "../../constant";
+import { restaurantInfo, navigationConfig } from "../../constant";
 import RestaurantHeadingInfo from "./RestaurantHeadingInfo";
 import ReservationButton from "./ReservationButton";
+import OpeningHours from "./OpeningHours";
+import LanguageSwitcher from "./LanguageSwitcher";
 import useDeviceType from "../../hooks/useDeviceType";
 
 function Header({ scrolled, isNavVisible }) {
-  const PAGE_URL = useMemo(
-    () => [
-      {
-        name: "navbar.home",
-        url: "/",
-      },
-      {
-        name: "navbar.menu",
-        url: "/menu",
-      },
-      // {
-      //   name: "navbar.about",
-      //   url: "/about",
-      // },
-      {
-        name: "navbar.contact",
-        url: "/contact",
-      },
-    ],
-    []
-  );
   const { pathname } = useLocation();
   const isMobile = useDeviceType() === "mobile";
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [active, setActive] = useState(false);
-  const [show, setShow] = useState(false);
-
-  const restaurantAddress = useMemo(() => restaurantInfo.address, []);
-  const restaurantPhone = useMemo(() => restaurantInfo.phone, []);
-  const restaurantEmail = useMemo(() => restaurantInfo.email, []);
-  const restaurantName = useMemo(() => restaurantInfo.name, []);
 
   const currentClass = (page) => pathname === page.url && "current";
-
-  const languages = useMemo(
-    () => [
-      { code: "en", label: "English" },
-      { code: "vi", label: "Tiếng Việt" },
-      { code: "de", label: "Deutsch" },
-    ],
-    []
-  );
-
-  const handleLanguageChange = useCallback(
-    (event) => {
-      const selectedLanguage = event.target.value;
-      i18n.changeLanguage(selectedLanguage);
-    },
-    [i18n]
-  );
 
   return (
     <>
@@ -66,7 +24,7 @@ function Header({ scrolled, isNavVisible }) {
         <div
           className="menu-backdrop"
           style={{ opacity: "1", visibility: "visible" }}
-          onClick={() => setActive(false)} // Close sidebar when clicking on backdrop
+          onClick={() => setActive(false)}
         />
       )}
 
@@ -90,64 +48,24 @@ function Header({ scrolled, isNavVisible }) {
 
           <div className="side-menu">
             <ul className="navigation clearfix">
-              {PAGE_URL.map((page, index) => (
+              {navigationConfig.map((page, index) => (
                 <li className={currentClass(page)} key={index}>
                   <Link to={page.url}>{t(page.name)}</Link>
                 </li>
               ))}
-              <li className="dropdown">
-                <Link to="#" onClick={() => setShow(!show)}>
-                  {t("navbar.language")}
-                  <button type="button" className="btn-expander">
-                    <i className="far fa-angle-down"></i>
-                  </button>
-                </Link>
-
-                <ul style={{ display: show ? "block" : "none" }}>
-                  {languages.map((lang) => (
-                    <li
-                      key={lang.code}
-                      onClick={() => i18n.changeLanguage(lang.code)}
-                    >
-                      <Link>{lang.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
+              <LanguageSwitcher isMobile={true} />
             </ul>
           </div>
 
           <h2>{t("navbar.visit")}</h2>
-          <ul className="info">
-            <li>{restaurantAddress}</li>
-            <li>
-              <Link to={"mailto:" + restaurantEmail}>{restaurantEmail}</Link>
-            </li>
-            <li>{t("openTime")}</li>
-            <li>
-              {t("shortDays.monday") +
-                "-" +
-                t("shortDays.thursday") +
-                ": 11:30 - 14:30 / 17:30 - 22:00"}
-            </li>
-            <li>{t("shortDays.friday") + ": 11:30 - 14:30 / 17:30 - 23:00"}</li>
-            <li>
-              {t("shortDays.saturday") + ": 12:00 - 15:00 / 17:30 - 23:00"}
-            </li>
-            <li>
-              {t("shortDays.sunday") +
-                " & " +
-                t("shortDays.holiday") +
-                ": 12:00 - 15:00 / 17:30 - 22:00"}
-            </li>
-          </ul>
+          <OpeningHours />
           <div className="separator">
             <span></span>
           </div>
           <div className="booking-info">
             <div className="bk-title">{t("navbar.bookingRequest")}</div>
             <div className="bk-no">
-              <Link to={"tel:" + restaurantPhone}>{restaurantPhone}</Link>
+              <Link to={"tel:" + restaurantInfo.phone}>{restaurantInfo.phone}</Link>
             </div>
           </div>
         </div>
@@ -164,11 +82,11 @@ function Header({ scrolled, isNavVisible }) {
               <div className="main-box">
                 <div className="logo-boxtwo">
                   <div className="logo">
-                    <Link to="/" title={restaurantName}>
+                    <Link to="/" title={restaurantInfo.name}>
                       <img
                         src={hori_logo}
                         alt=""
-                        title={restaurantName}
+                        title={restaurantInfo.name}
                         style={{ width: 300, height: 130 }}
                       />
                     </Link>
@@ -192,28 +110,12 @@ function Header({ scrolled, isNavVisible }) {
                     <div className="nav-outertwo clearfix">
                       <nav className="main-menu">
                         <ul className="navigation clearfix">
-                          {PAGE_URL.map((page, index) => (
+                          {navigationConfig.map((page, index) => (
                             <li className={currentClass(page)} key={index}>
                               <Link to={page.url}>{t(page.name)}</Link>
                             </li>
                           ))}
-                          <li>
-                            <div className="language-switcher">
-                              <select
-                                onChange={handleLanguageChange}
-                                defaultValue={""}
-                              >
-                                <option value="" disabled hidden>
-                                  {t("navbar.language")}
-                                </option>
-                                {languages.map((lang) => (
-                                  <option key={lang.code} value={lang.code}>
-                                    {lang.label}
-                                  </option>
-                                ))}
-                              </select>
-                            </div>
-                          </li>
+                          <LanguageSwitcher />
                         </ul>
                       </nav>
                     </div>

@@ -7,6 +7,7 @@ import bgeleven from "../../assets/images/background/bg-11.png";
 import signatureone from "../../assets/images/resource/signature-1.png";
 import aboutimgone from "../../assets/images/resource/about-image-2.jpg";
 import aboutimgtwo from "../../assets/images/resource/about-image-1.jpg";
+import OptimizedImage from '../common/OptimizedImage';
 
 function Aboutsec() {
   const [Video, setVideo] = useState();
@@ -15,10 +16,20 @@ function Aboutsec() {
     <>
       <section className="about-section">
         <div className="left-bg">
-          <img src={bgten} alt="" title="" />
+          <OptimizedImage 
+            src={bgten} 
+            alt="Background decoration" 
+            className="background-image"
+            priority={true}
+          />
         </div>
         <div className="right-bg">
-          <img src={bgeleven} alt="" title="" />
+          <OptimizedImage 
+            src={bgeleven} 
+            alt="Background decoration" 
+            className="background-image"
+            priority={true}
+          />
         </div>
         <div className="auto-container">
           <div className="title-box centered">
@@ -27,9 +38,10 @@ function Aboutsec() {
             </div>
 
             <div className="pattern-image">
-              <img
+              <OptimizedImage 
                 src={require("../../assets/images/icons/separator.svg").default}
-                alt="mySvgImage"
+                alt="Separator decoration"
+                className="separator-image"
               />
             </div>
 
@@ -55,7 +67,11 @@ function Aboutsec() {
                   book It has survived.
                 </div>
                 <div className="signature">
-                  <img src={signatureone} alt="" title="" />
+                  <OptimizedImage 
+                    src={signatureone} 
+                    alt="Founder's signature"
+                    className="signature-image"
+                  />
                 </div>
                 <div className="author">andrew joe - founder</div>
                 <div className="video-box">
@@ -64,7 +80,11 @@ function Aboutsec() {
                       to="https://www.youtube.com/watch?v=ZETY_l3GVQg"
                       className="lightbox-image"
                     >
-                      <img src={aboutimgtwo} alt="" />
+                      <OptimizedImage 
+                        src={aboutimgtwo} 
+                        alt="About video thumbnail"
+                        className="video-thumbnail"
+                      />
                     </Link>
                     <Link
                       to="#"
@@ -87,7 +107,11 @@ function Aboutsec() {
                 data-wow-delay="300ms"
               >
                 <div className="image">
-                  <img src={aboutimgone} alt="" />
+                  <OptimizedImage 
+                    src={aboutimgone} 
+                    alt="About section image"
+                    className="about-image"
+                  />
                 </div>
               </div>
             </div>

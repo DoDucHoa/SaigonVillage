@@ -4,6 +4,7 @@ import bgone from "../../assets/images/background/bg-5.png";
 import bgtwo from "../../assets/images/background/bg-6.png";
 import { TabsBox } from "../Menu/TabsBox";
 import { DEFAULT_TAB } from "../../constant/MenuData";
+import OptimizedImage from "../common/OptimizedImage";
 
 const MenuSection = () => {
   const [activeTab, setActiveTab] = useState(DEFAULT_TAB);
@@ -23,10 +24,20 @@ const MenuSection = () => {
 const BackgroundImage = ({ leftImage, rightImage }) => (
   <>
     <div className="left-bg">
-      <img src={leftImage} alt="" title="" />
+      <OptimizedImage 
+        src={leftImage} 
+        alt="Background decoration" 
+        className="background-image"
+        priority={true}
+      />
     </div>
     <div className="right-bg">
-      <img src={rightImage} alt="" title="" />
+      <OptimizedImage 
+        src={rightImage} 
+        alt="Background decoration" 
+        className="background-image"
+        priority={true}
+      />
     </div>
   </>
 );

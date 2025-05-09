@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState, useCallback } from "react";
 
 export const withHeader = (Component) => {
   const Header = lazy(() => import("../components/Header"));
@@ -6,7 +6,8 @@ export const withHeader = (Component) => {
     const [scrolled, setScrolled] = useState(false);
     const [isNavVisible, setIsNavVisible] = useState(true);
 
-    const handleScroll = () => {
+    // Memoize the scroll handler
+    const handleScroll = useCallback(() => {
       const offset = window.scrollY;
       if (offset > 1000) {
         setIsNavVisible(false);
@@ -17,11 +18,13 @@ export const withHeader = (Component) => {
         setScrolled(false);
         setIsNavVisible(true);
       }
-    };
+    }, []); // Empty dependency array since it doesn't depend on any props or state
 
     useEffect(() => {
       window.addEventListener("scroll", handleScroll);
-    });
+      // Add cleanup function
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, [handleScroll]); // Add handleScroll to dependencies
 
     return (
       <>
