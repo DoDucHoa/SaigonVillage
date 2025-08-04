@@ -8,7 +8,7 @@ const RestaurantModal = () => {
     // Modal content - easily customizable
     const modalContent = {
         title: 'Mittagspause',
-        description: '8. & 11.–15. August mittags geschlossen',
+        description: '7. & 11.–15. August mittags geschlossen',
         imageUrl: RestaurantImage,
         imageAlt: 'Delicious pasta dish',
         buttonText: 'Claim Discount',
