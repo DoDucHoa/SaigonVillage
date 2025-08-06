@@ -22,7 +22,7 @@ const RestaurantModal = () => {
             if (!isDismissed) {
                 setIsVisible(true);
             }
-        }, 1000); ZZZZZZZZZZZZZZ
+        }, 1000);
         return () => clearTimeout(timer);
     }, [isDismissed]);
 
