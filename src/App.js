@@ -11,7 +11,7 @@ export default function App() {
       <Router>
         <Routing />
       </Router>
-      {/* <RestaurantModal /> */}
+      <RestaurantModal />
     </ErrorBoundary>
   );
 }
