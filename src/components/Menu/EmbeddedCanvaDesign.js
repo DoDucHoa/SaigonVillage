@@ -1,7 +1,12 @@
 import useDeviceType from "../../hooks/useDeviceType";
 
-const EmbeddedCanvaDesign = ({ embedLink }) => {
+const EmbeddedCanvaDesign = ({ embedLink, title }) => {
   const isMobile = useDeviceType() === "mobile";
+  const iframeTitle =
+    title ||
+    `embedded-canva-${(embedLink || "")
+      .replace(/[^a-z0-9]+/gi, "-")
+      .toLowerCase()}`;
 
   const containerStyle = {
     position: "relative",
@@ -31,6 +36,7 @@ const EmbeddedCanvaDesign = ({ embedLink }) => {
   return (
     <div style={containerStyle}>
       <iframe
+        title={iframeTitle}
         loading="lazy"
         style={iframeStyle}
         src={embedLink}
