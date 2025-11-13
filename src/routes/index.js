@@ -7,7 +7,6 @@ import Footer from "../components/Footer/Main";
 // Lazy load all page components
 const Home = lazy(() => import("../pages/Home"));
 const Menu = lazy(() => import("../pages/Menu"));
-const About = lazy(() => import("../pages/About"));
 const Contact = lazy(() => import("../pages/Contact"));
 
 // Loading component
@@ -30,7 +29,6 @@ function Index() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/ourchefs" element={<Chefs />} /> */}
           {/* <Route path="/reservation" element={<Book />} /> */}

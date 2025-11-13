@@ -2091,16 +2091,6 @@ body.visible-sidebar {
   z-index: 3;
 }
 
-.story-section .image-col .round-stamp:before {
-  position: absolute;
-  content: "";
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background: url(../images/resource/badge-1-bg.png) no-repeat;
-}
-
 .story-section .image-col .images {
   position: relative;
   padding-left: var(--padding-left-90);

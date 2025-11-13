@@ -7,13 +7,14 @@ const RestaurantModal = () => {
 
   // Modal content - easily customizable
   const modalContent = {
-    title: "Mittagspause",
-    description: "10. November mittags geschlossen",
+    title: "🚨 Wichtige Information 🚨",
+    description: "Auf dem Kreuz 19, 86152 Augsburg, Deutschland",
     imageUrl: RestaurantImage,
     imageAlt: "Delicious pasta dish",
     buttonText: "Claim Discount",
     description2:
-      "Wir bitten um Ihr Verständnis und freuen uns auf Ihren Besuch am Abend!",
+      "Alle anderen Orte sind inoffiziell und stellen Markenrechtsverletzungen dar!",
+    description3: "Unser einzig offizieller Standort ist:",
     showConfirmButton: false,
   };
 
@@ -139,6 +140,20 @@ const RestaurantModal = () => {
           >
             {modalContent.title}
           </h2>
+
+          {modalContent.description3 && (
+            <p
+              style={{
+                margin: "0 0 25px 0",
+                fontSize: "14px",
+                color: "#949494",
+                textAlign: "center",
+                fontStyle: "italic",
+              }}
+            >
+              {modalContent.description3}
+            </p>
+          )}
 
           <p
             style={{
